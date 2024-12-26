@@ -263,7 +263,7 @@ footer div img {
 @media (max-width: 599px) {
   
   .bienvenidaFoto{
-    width: 60rem;
+    width: 100vh;
     object-fit: cover;
     height: 40vh;
   }
@@ -276,7 +276,7 @@ footer div img {
     font-size: 3rem;
     width: 50vh;
     top: 20%;
-    left: 40%;
+    left: 50%;
   }
 
   .productosDestacados h3, .productosRecomendados p {
@@ -294,6 +294,7 @@ footer div img {
     }
   }
   footer{
+    max-height: fit-content;
     width: 100vh;
   }
 }
