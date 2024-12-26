@@ -1,0 +1,80 @@
+window.sl_dcs_ctx = window.sl_dcs_ctx || {};
+window.sl_dcs_ctx.sl_notr = "5893f5394";
+
+// GDN.js library uses slTranslateElemCustom function to determine
+// if an element should be translated or not.
+function slTranslateElemCustom(elem) {
+    if (!elem) return false;
+
+    return true;
+}
+
+window.slCustomJsCode = window.slCustomJsCode || {};
+
+window.slCustomJsCode.blockStringsIngestion = function blockStringsIngestion() {
+    return false;
+};
+
+window.slCustomJsCode.isElemComposite = function isElemComposite(elem) {
+    if (!elem || !elem.children) return false;
+
+    for (let i = 0; i < elem.children.length; i++) {
+        const child = elem.children[i];
+        if (!window.slCustomJsCode._isTagNameBlock(child.tagName)) {
+            if (child.getAttribute("sl-html-hashcode") != null) {
+                return true;
+            }
+            if (child.getAttribute("sl-hashcode") != null) {
+                return true;
+            }
+        }
+    }
+
+    return false;
+};
+
+window.slCustomJsCode._isTagNameBlock = function _isTagNameBlock(tagName) {
+    if (!tagName) {
+      return false;
+    }
+
+    const BLOCK_LEVEL = {
+      ADDRESS: 1,
+      ARTICLE: 1,
+      ASIDE: 1,
+      BLOCKQUOTE: 1,
+      DETAILS: 1,
+      DIALOG: 1,
+      DD: 1,
+      DIV: 1,
+      DL: 1,
+      DT: 1,
+      FIELDSET: 1,
+      FIGCAPTION: 1,
+      FIGURE: 1,
+      FOOTER: 1,
+      FORM: 1,
+      H1: 1,
+      H2: 1,
+      H3: 1,
+      H4: 1,
+      H5: 1,
+      H6: 1,
+      HEADER: 1,
+      HGROUP: 1,
+      HR: 1,
+      LI: 1,
+      MAIN: 1,
+      NAV: 1,
+      OL: 1,
+      OVERLAY: 1,
+      P: 1,
+      "POPOVER-MODAL": 1,
+      PRE: 1,
+      SECTION: 1,
+      TABLE: 1,
+      TITLE: 1,
+      UL: 1
+    };
+    return BLOCK_LEVEL[tagName.toUpperCase()] === 1;
+  };
