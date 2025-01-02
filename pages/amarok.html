@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +10,41 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
 </head>
-
 <body>
-
-    <nav class="navbar navbar-light">
-        <form class="container-fluid justify-content-start">
-            <a href="../index.html" class="btn btn-light me-2" type="button">Home</a>
-        </form>
-    </nav>
-
+    <header>
+        <div class="navBar">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html"><img src="../img/logo.jpg" alt="" height="30"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/golf.r.html">Golf R</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Otros Autos
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="../pages/amarok.html">Amarok v6</a></li>
+                          <li><a class="dropdown-item" href="../pages/golf.html">Golf Gti</a></li>
+                          <li><a class="dropdown-item" href="../pages/vento.html">Vento Tsi</a></li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
     <section class="contenedorTotal">
         <div class="dataCompra">
             <img class="amarok" src="../img/amarok.png" alt="">
@@ -30,12 +53,10 @@
                 <input class="btn btn-outline-success btn-lg" type="button" value="Comprar">
                 <h2 class="precioAuto">$45.000</h2>
             </div>
-
         </div>
         <div class="espacioDesc">
             Descripción
         </div>
-
         <div class="contenedorDes">
             <div class="primeraParte">
                 <p class="txtDescripcion">Modelo: Volkswagen Amarok V6 Modelo 2022 Extreme 87.000km </p>
@@ -43,7 +64,6 @@
                 <p class="txtDescripcion">Velocidades: Caja Automatica 8 velocidades</p>
                 <p class="txtDescripcion">Traccion: Sistema 4Motion</p>
             </div>
-
             <div class="consumo">Consumo:
                 <p class="txtDescripcion">Urbano - 12.9L/100km</p>
                 <p class="txtDescripcion">Extraurbano - 9.7L/100km</p>
@@ -53,12 +73,10 @@
                 <p class="txtDescripcion">V-Max: 210km/h (limitado)</p>
                 <p class="txtDescripcion">0-100 km/h: 7.8s</p>
             </div>
-
         </div>
     </section>
     <h2 class="tituloOtrosAutos">Te puede interesar:</h2>
     <div class="otrosAutos">
-
         <a class="golfr" href="../pages/golf.r.html">
             <img class="golfr" src="../img/golfr.png" alt="Golf R">
             <p class="precioAutos"> $62.000</p>
@@ -72,22 +90,19 @@
             <p class="precioAutos"> $32.000</p>
         </a>
     </div>
-
+    <footer>
+        <div class="sobreNosotros">
+            <h3>Síguenos en nuestras redes</h3>
+            <div>
+                <a href="https://www.instagram.com/"><img class="ig" src="../img/IG.jpg" alt="Instagram"></a>
+            </div>
+            <div>
+                <a href="https://x.com/"><img class="x" src="../img/X.jpg" alt="Twitter"></a>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/"><img class="yt" src="../img/YT.jpg" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
 </body>
-<footer>
-    <div class="sobreNosotros">
-        <h3>Síguenos en nuestras redes</h3>
-        <div>
-            <a href="https://www.instagram.com/"><img class="ig" src="../img/IG.jpg" alt="Instagram"></a>
-        </div>
-        <div>
-            <a href="https://x.com/"><img class="x" src="../img/X.jpg" alt="Twitter"></a>
-        </div>
-        <div>
-            <a href="https://www.youtube.com/"><img class="yt" src="../img/YT.jpg" alt="YouTube"></a>
-        </div>
-    </div>
-
-</footer>
-
 </html>

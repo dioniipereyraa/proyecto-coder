@@ -335,14 +335,6 @@
 
 /* Ordenador (1024px y superiores) */
 @media (min-width: 1024px) {
-    .navbar {
-        width: 100%;
-        padding: 1rem;
-
-        .btn {
-            font-size: 1.5rem;
-        }
-    }
 /*MAIN*/
     .dataCompra{
         margin-top: 10rem;
