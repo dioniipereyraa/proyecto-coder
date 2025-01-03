@@ -1,4 +1,4 @@
-* {
+html.paginaMain * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,14 +6,14 @@
   text-decoration: none;
 }
 
-body {
+html.paginaMain body  {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: aliceblue;
   line-height: 1.6;
 }
 
 /*INICIO HEADER*/
-header {
+html.paginaMain header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +22,7 @@ header {
   padding: 0rem;
 }
 /* FOTO MAIN SEÑOR EN PLAYA */
-.bienvenidaFoto {
+html.paginaMain .bienvenidaFoto {
   width: 100%;
   height: 50%;
   object-fit: cover;
@@ -32,7 +32,7 @@ header {
 
 }
 
-.contenedor {
+html.paginaMain .contenedor {
   display: flex;
   position: relative; /* Agregado */
   flex-direction: column;
@@ -41,7 +41,7 @@ header {
   justify-content: center; /* Centrar el contenido verticalmente */
 }
 
-.textoMain {
+html.paginaMain .textoMain {
   position: absolute; 
   top: 60%; 
   left: 20%; 
@@ -63,15 +63,15 @@ header {
 
 /*FIN HEADER*/
 /*INICIO CONTENIDO*/
-main {
+html.paginaMain main {
   padding: 2rem;
 }
 
-section {
+html.paginaMain section {
   margin-bottom: 2rem;
 }
 
-.novedades {
+html.paginaMain .novedades {
   font-size: 3rem;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: capitalize;
@@ -80,15 +80,15 @@ section {
   text-decoration: none;
 }
 
-h2 {
+html.paginaMain h2 {
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 1rem;
   text-decoration: none;
 }
 
-.productosDestacados,
-section div {
+html.paginaMain .productosDestacados,
+html.paginaMain section div {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -97,16 +97,16 @@ section div {
   align-items: center;
 }
 
-.productosDestacados img,
-section div img {
+html.paginaMain .productosDestacados img,
+html.paginaMain section div img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
   text-decoration: none;
 }
 
-.productosDestacados p,
-section div p {
+html.paginaMain .productosDestacados p,
+html.paginaMain section div p {
   text-align: center;
   font-size: 1rem;
   font-weight: 550;
@@ -118,7 +118,7 @@ section div p {
 /*-----------AUTOS REC---------*/
 
 
-.productosRecomendados {
+html.paginaMain .productosRecomendados {
   .productosRecomendados {
     display: flex;
     justify-content: center;
@@ -131,7 +131,7 @@ section div p {
    
 }
 
-.vento {
+html.paginaMain .vento {
   display: block;
   padding: 2rem;
   border: solid;
@@ -155,7 +155,7 @@ section div p {
   }
 }
 
-.golfgti {
+html.paginaMain .golfgti {
   padding: 2rem;
   border: solid;
   border-color: gray;
@@ -179,7 +179,7 @@ section div p {
 }
 
 
-.amarok {
+html.paginaMain .amarok {
   display: flexbox;
   padding: 2rem;
   border: solid;
@@ -212,12 +212,12 @@ section div p {
 
 /*-------GRID--------*/
 
-.titulo {
+html.paginaMain .titulo {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
   font-size: clamp(18px, 5vw, 1.75rem);
 }
-.gridComparacion {
+html.paginaMain .gridComparacion {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 100%;
@@ -225,12 +225,12 @@ section div p {
   gap: 5px;
   justify-content: left;
 }
-.items {
+html.paginaMain .items {
   border: 0.5px solid #ccc;
   background-color: rgb(219, 217, 217);
   justify-content: left;
 }
-.imgGrid {
+html.paginaMain .imgGrid {
   max-width: 5%;
   margin-top: 0.25rem;
   justify-content: left;
@@ -238,24 +238,24 @@ section div p {
 /*FIN GRID*/
 /*FIN CONTENIDO*/
 /*INICIO FOOTER*/
-footer {
+html.paginaMain footer {
   text-align: center;
   padding: 1rem;
   background-color: #f4f4f4;
   margin-top: 2rem;
 }
 
-footer h3 {
+html.paginaMain footer h3 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
-footer div {
+html.paginaMain footer div {
   display: inline-block;
   margin: 0.5rem;
 }
 
-footer div img {
+html.paginaMain footer div img {
   width: 40px;
   height: 40px;
 }
@@ -269,30 +269,30 @@ footer div img {
 
 @media (max-width: 599px) {
   
-  .bienvenidaFoto{
+  html.paginaMain .bienvenidaFoto{
     width: 100vh;
     object-fit: cover;
     height: 40vh;
   }
-  body{
+  html.paginaMain body{
     
     width: 100vh;
     height: 100vh;
   }
-  .textoMain {
+  html.paginaMain .textoMain {
     font-size: 3rem;
     width: 50vh;
     top: 40%;
     left: 30%;
   }
 
-  .productosDestacados h3, .productosRecomendados p {
+  html.paginaMain .productosDestacados h3,html.paginaMain .productosRecomendados p {
     font-size: 0.9rem;
   }
-  .gridComparacion{
+  html.paginaMain .gridComparacion{
     justify-content:center;
   }
-  .amarok{
+  html.paginaMain .amarok{
     width: 32rem;
     height: auto;
     .img{
@@ -300,9 +300,1799 @@ footer div img {
       height: auto;
     }
   }
-  footer{
+  html.paginaMain footer{
     max-height: fit-content;
     width: 100vh;
   }
 }
+/*FIN PAGINA MAIN*/
 
+/*INICIO PAGINA GOLFR*/
+html.paginaGolfR * {
+  margin: 0;
+  padding: 0;
+
+}
+
+@media(max-width: 599px) {
+  html.paginaGolfR body {
+      height: 100vh;
+      width: 100vh;
+
+  }
+
+  /*navbar-------*/
+  html.paginaGolfR .navbar {
+      width: 100vh;
+      background-color: #f4f4f4;
+
+      .btn {
+          font-size: 2rem;
+          font-weight: 600;
+      }
+  }
+
+  /*FIN-------navbar---------*/
+
+
+  /*-----DETALLES COMPRA----*/
+  html.paginaGolfR .golfr {
+      width: 100vh;
+      margin-top: 5rem;
+      height: auto;
+  }
+
+  html.paginaGolfR .dataCompra {
+      .letrasAuto {
+
+          display: flex;
+          flex-direction: column;
+          margin-top: 2rem;
+          margin-left: 0;
+          gap: 1rem;
+          text-align: center;
+
+          .nombreAuto{
+              text-align: center;
+          }
+
+          .btn {
+              display: block;
+              width: 50vh;
+              align-items: center;
+              margin-left: 25vh;
+              font-size: 5vh;
+          }
+      }
+  }
+
+  html.paginaGolfR .letrasAuto {
+      color: black;
+      font-size: xx-large;
+
+  }
+
+  /*-----FIN DETALLES COMPRA-----*/
+
+  html.paginaGolfR .espacioDesc {
+      display: block;
+      width: 100vh;
+      background-color: #f4f4f4;
+      text-align: center;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      color: black;
+      font-size: 5vh;
+
+  }
+
+  /*-----DESCRIPCION------*/
+  html.paginaGolfR .contenedorDes {
+      position: static;
+      font-size: 4vh;
+      margin-top: 3rem;
+      margin-left: 1rem;
+  }
+
+  html.paginaGolfR .primeraParte {
+      gap: 0.5rem;
+      margin-left: 0.5rem;
+      padding: 0;
+  }
+
+  html.paginaGolfR .consumo {
+      display: flex;
+      margin-left: 1rem;
+      flex-direction: column;
+
+
+      p {
+          padding-left: 1rem;
+      }
+  }
+
+  html.paginaGolfR .txtDescripcion {
+      margin: 0.25rem;
+  }
+
+  html.paginaGolfR .parteFinal {
+      margin-left: 0.5rem;
+  }
+
+  /*-------FIN DESCRIPCION-----*/
+  html.paginaGolfR .tituloOtrosAutos{
+      font-size: 3rem;
+      text-align: center;
+      margin-top: 10rem;
+  }
+  
+  html.paginaGolfR .otrosAutos {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      align-items: center;
+      font-size: 3.5vh;
+      font-weight: 600;
+      margin-top: 3rem;
+
+      .vento {
+          width: 50vh;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+      }
+
+      .golfgti {
+          width: 50vh;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+      }
+
+      .amarok {
+          width: 50vh;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+
+      }
+
+  }
+
+
+  /*footer*/
+  html.paginaGolfR footer {
+      text-align: center;
+      display: inline-block;
+      padding: 1rem;
+      background-color: #f4f4f4;
+      margin-top: 2rem;
+      width: 100vh;
+  }
+
+  html.paginaGolfR footer div {
+      display: inline-block;
+      margin: 0.5rem;
+  }
+
+  html.paginaGolfR footer div img {
+      width: 40px;
+      height: 40px;
+  }
+
+  /*fin footer*/
+}
+
+
+
+
+
+
+
+
+
+
+/*---ADAPTACION PANTALLAS-----*/
+
+/*---Tablet---*/
+@media (min-width: 600px) {
+
+
+  html.paginaGolfR body {
+      height: 100vh;
+      width: 100vw;
+  }
+
+  /*NAVBAR*/
+  html.paginaGolfR .navbar {
+      width: 100%;
+      background-color: #f4f4f4;
+      font-size: 1rem;
+  }
+
+  /*FIN NAVBAR*/
+
+
+  /*DATA*/
+
+  html.paginaGolfR .golfr {
+      width: 80%;
+      margin-top: 5rem;
+      justify-content: center;
+      margin-left: 10%;
+
+  }
+
+
+  html.paginaGolfR .dataCompra {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      
+
+      .letrasAuto {
+          margin-top: 5rem;
+          .nombreAuto {
+              font-size: 3.5rem;
+          }
+
+          .precioAuto {
+              font-size: 3.5rem;
+              margin-top: 1rem;
+          }
+      }
+  }
+
+  
+
+  html.paginaGolfR .dataCompra .btn {
+      width: 40%;
+      margin-top: 1rem;
+      font-size: 2rem;
+  }
+
+  /*FIN DATA*/
+  /*DESCRPCION*/
+  html.paginaGolfR .espacioDesc {
+      font-size: 2rem;
+      margin-top: 10rem;
+      background-color: #f4f4f4;
+      text-align: center;
+
+  }
+
+  html.paginaGolfR .contenedorDes {
+      font-size: 2rem;
+      font-size: 1.5rem;
+      margin-top: 5rem;
+      margin-left: 1rem;
+  }
+
+  /*FIN DESCRIPCION*/
+  /*OTROS AUTOS*/
+  html.paginaGolfR .otrosAutos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 2.5rem;
+      margin-top: 12rem;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      .vento {
+          width: 52vw;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+      }
+
+      .golfgti {
+          width: 50vw;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+      }
+
+      .amarok {
+          width: 55vw;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+
+      }
+      
+  }
+
+  html.paginaGolfR .tituloOtrosAutos {
+          font-size: 3rem;
+          text-align: center;
+          margin-top: 20%;
+      }
+
+
+  /*FOOTER*/
+  html.paginaGolfR footer {
+      text-align: center;
+      margin-top: 15rem;
+      background-color: #f4f4f4;
+      display: inline-block;
+      width: 100vw;
+      padding: 1rem;
+      
+
+  }
+
+  html.paginaGolfR footer h3 {
+      font-size: 3rem;
+  }
+
+  html.paginaGolfR footer div {
+      display: inline-block;
+      margin: 0.25rem;
+  }
+
+  html.paginaGolfR footer div img {
+      width: 6vw;
+      height: 6vw;
+      margin: 1rem;
+  }
+
+  /*FIN FOOTER*/
+}
+
+/* Ordenador (1024px y superiores) */
+@media (min-width: 1024px) {
+  html.paginaGolfR .navbar {
+      width: 100%;
+      padding: 1rem;
+
+      .btn {
+          font-size: 1.5rem;
+      }
+  }
+/*MAIN*/
+html.paginaGolfR .dataCompra{
+      margin-top: 10rem;
+      display: flex;
+      flex-direction: row;
+      background-color: #f4f4f4;
+      justify-content:left;
+      align-items: center;
+      .golfr{
+          width: 40%;
+          margin-left: 2rem;
+          background-color: #f4f4f4;
+      }
+      .letrasAuto{
+          
+          margin-left: 15%;
+          margin-top: 5%;
+          .nombreAuto{
+              font-size: 3rem;
+          }        
+          .precioAuto{
+              font-size: 2rem;
+              margin-top: 1rem;
+          }
+      }
+      .btn{
+          width: 100%;
+          font-size: 2rem;
+      }
+  }
+/*FIN MAIN*/
+
+
+
+/*DESCRIPCION*/
+html.paginaGolfR .espacioDesc {
+      font-size: 2rem;
+      margin-top: 15rem;
+  }
+
+  html.paginaGolfR .contenedorDes {
+      font-size: 1.5rem;
+      margin-top: 5rem;
+  }
+  html.paginaGolfR .consumo{
+      .txtDescripcion{
+          margin-left: 2rem;
+      }
+  }
+/*FIN DESC*/
+
+
+/*OTROS AUTOS*/
+html.paginaGolfR .tituloOtrosAutos{
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 30rem;
+  }
+  html.paginaGolfR .otrosAutos {
+      gap: 2rem;
+      margin-top: 0rem;
+      display: flex;
+      background-color: #f4f4f4;
+      align-items: baseline;
+      flex-direction: row;
+      font-size: 2rem;
+      .amarok{
+          width: 90%;
+      }
+      .golfgti{
+          width: 75%;
+          
+      }
+      .vento{
+          width: 75%;
+          
+      }
+  }
+/*FIN OTROS AUTOS*/
+
+/*FOOTER*/
+html.paginaGolfR footer {
+      margin-top: 15rem;
+      font-size: 1.5rem;
+      padding: 0rem;
+      
+
+  }
+  html.paginaGolfR footer div h3{
+      font-size: 2rem;
+  }
+  html.paginaGolfR footer div img{
+      width: auto;
+      height: 5vh;
+  }
+}
+/*fin footer*/
+
+
+/*-----FIN PAGINA GOLF R----------------------------------------------------------------------------*/
+
+html.paginaVento * {
+  margin: 0;
+  padding: 0;
+
+}
+
+@media(max-width: 599px) {
+  html.paginaVento body {
+      height: 100vh;
+      width: 100vh;
+
+  }
+
+  /*navbar-------*/
+  html.paginaVento .navbar {
+      width: 100vh;
+      background-color: #f4f4f4;
+
+      .btn {
+          font-size: 2rem;
+          font-weight: 600;
+      }
+  }
+
+  /*FIN-------navbar---------*/
+
+
+  /*-----DETALLES COMPRA----*/
+  html.paginaVento .vento {
+      width: 100vh;
+      margin-top: 5rem;
+      height: auto;
+  }
+
+  html.paginaVento .dataCompra {
+      .letrasAuto {
+
+          display: flex;
+          flex-direction: column;
+          margin-top: 2rem;
+          margin-left: 0;
+          gap: 1rem;
+          text-align: center;
+
+          .nombreAuto{
+              text-align: center;
+          }
+
+          .btn {
+              display: block;
+              width: 50vh;
+              align-items: center;
+              margin-left: 25vh;
+              font-size: 5vh;
+          }
+      }
+  }
+
+  html.paginaVento .letrasAuto {
+      color: black;
+      font-size: xx-large;
+
+  }
+
+  /*-----FIN DETALLES COMPRA-----*/
+
+  html.paginaVento .espacioDesc {
+      display: block;
+      width: 100vh;
+      background-color: #f4f4f4;
+      text-align: center;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      color: black;
+      font-size: 5vh;
+
+  }
+
+  /*-----DESCRIPCION------*/
+  html.paginaVento .contenedorDes {
+      position: static;
+      font-size: 4vh;
+      margin-top: 3rem;
+      margin-left: 1rem;
+  }
+
+  html.paginaVento .primeraParte {
+      gap: 0.5rem;
+      margin-left: 0.5rem;
+      padding: 0;
+  }
+
+  html.paginaVento .consumo {
+      display: flex;
+      margin-left: 1rem;
+      flex-direction: column;
+
+
+      p {
+          padding-left: 1rem;
+      }
+  }
+
+  html.paginaVento .txtDescripcion {
+      margin: 0.25rem;
+  }
+
+  html.paginaVento .parteFinal {
+      margin-left: 0.5rem;
+  }
+
+  /*-------FIN DESCRIPCION-----*/
+  html.paginaVento .tituloOtrosAutos{
+      font-size: 3rem;
+      text-align: center;
+      margin-top: 10rem;
+  }
+  
+  html.paginaVento .otrosAutos {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      align-items: center;
+      font-size: 3.5vh;
+      font-weight: 600;
+      margin-top: 3rem;
+
+      .amarok {
+          width: 50vh;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+      }
+
+      .golfgti {
+          width: 50vh;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+      }
+
+      .golfr {
+          width: 50vh;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+
+      }
+
+  }
+
+
+  /*footer*/
+  html.paginaVento footer {
+      text-align: center;
+      display: inline-block;
+      padding: 1rem;
+      background-color: #f4f4f4;
+      margin-top: 2rem;
+      width: 100vh;
+  }
+
+  html.paginaVento footer div {
+      display: inline-block;
+      margin: 0.5rem;
+  }
+
+  html.paginaVento footer div img {
+      width: 40px;
+      height: 40px;
+  }
+
+  /*fin footer*/
+}
+
+
+
+
+
+
+
+
+
+
+/*---ADAPTACION PANTALLAS-----*/
+
+/*---Tablet---*/
+@media (min-width: 600px) {
+
+
+  html.paginaVento body {
+      height: 100vh;
+      width: 100vw;
+  }
+
+  /*NAVBAR*/
+  html.paginaVento .navbar {
+      width: 100%;
+      background-color: #f4f4f4;
+
+      .btn {
+          font-size: 3vw;
+      }
+  }
+
+  /*FIN NAVBAR*/
+
+
+  /*DATA*/
+
+  html.paginaVento .vento {
+      width: 80%;
+      margin-top: 5rem;
+      justify-content: center;
+      margin-left: 10%;
+
+  }
+
+
+  html.paginaVento .dataCompra {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      
+
+      .letrasAuto {
+          margin-top: 5rem;
+          .nombreAuto {
+              font-size: 3.5rem;
+          }
+
+          .precioAuto {
+              font-size: 3.5rem;
+              margin-top: 1rem;
+          }
+      }
+  }
+
+  
+
+  html.paginaVento .dataCompra .btn {
+      width: 40%;
+      margin-top: 1rem;
+      font-size: 2rem;
+  }
+
+  /*FIN DATA*/
+  /*DESCRPCION*/
+  html.paginaVento .espacioDesc {
+      font-size: 2rem;
+      margin-top: 10rem;
+      background-color: #f4f4f4;
+      text-align: center;
+
+  }
+
+  html.paginaVento .contenedorDes {
+      font-size: 2rem;
+      font-size: 1.5rem;
+      margin-top: 5rem;
+      margin-left: 1rem;
+  }
+
+  /*FIN DESCRIPCION*/
+  /*OTROS AUTOS*/
+  html.paginaVento .otrosAutos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 2.5rem;
+      margin-top: 12rem;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      .amarok {
+          width: 60vw;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+      }
+
+      .golfgti {
+          width: 50vw;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+      }
+
+      .golfr {
+          width: 55vw;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+
+      }
+      
+  }
+
+  html.paginaVento .tituloOtrosAutos {
+          font-size: 3rem;
+          text-align: center;
+          margin-top: 20%;
+      }
+
+
+  /*FOOTER*/
+  html.paginaVento footer {
+      text-align: center;
+      margin-top: 15rem;
+      background-color: #f4f4f4;
+      display: inline-block;
+      width: 100vw;
+      padding: 1rem;
+      
+
+  }
+
+  html.paginaVento footer h3 {
+      font-size: 3rem;
+  }
+
+  html.paginaVento footer div {
+      display: inline-block;
+      margin: 0.25rem;
+  }
+
+  html.paginaVento footer div img {
+      width: 6vw;
+      height: 6vw;
+      margin: 1rem;
+  }
+
+  /*FIN FOOTER*/
+}
+
+/* Ordenador (1024px y superiores) */
+@media (min-width: 1024px) {
+/*MAIN*/
+html.paginaVento .navbar {
+  width: 100%;
+  padding: 1rem;
+
+  .btn {
+      font-size: 1.5rem;
+  }
+}
+html.paginaVento .dataCompra{
+      margin-top: 10rem;
+      display: flex;
+      flex-direction: row;
+      background-color: #f4f4f4;
+      justify-content:left;
+      align-items: center;
+      .vento{
+          width: 40%;
+          margin-left: 2rem;
+          background-color: #f4f4f4;
+      }
+      .letrasAuto{
+          
+          margin-left: 15%;
+          margin-top: 5%;
+          .nombreAuto{
+              font-size: 3rem;
+          }        
+          .precioAuto{
+              font-size: 2rem;
+              margin-top: 1rem;
+          }
+      }
+      .btn{
+          width: 100%;
+          font-size: 2rem;
+      }
+  }
+/*FIN MAIN*/
+
+
+
+/*DESCRIPCION*/
+html.paginaVento .espacioDesc {
+      font-size: 2rem;
+      margin-top: 15rem;
+  }
+
+  html.paginaVento .contenedorDes {
+      font-size: 1.5rem;
+      margin-top: 5rem;
+  }
+  html.paginaVento .consumo{
+      .txtDescripcion{
+          margin-left: 2rem;
+      }
+  }
+/*FIN DESC*/
+/*OTROS AUTOS*/
+html.paginaVento .tituloOtrosAutos{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 30rem;
+  }
+  html.paginaVento .otrosAutos {
+    gap: 2rem;
+    margin-top: 0rem;
+    display: flex;
+    background-color: #f4f4f4;
+    align-items: baseline;
+    flex-direction: row;
+    font-size: 2rem;
+    .golfr{
+        width: 75%;
+    }
+    .golfgti{
+        width: 75%;
+        
+    }
+    .amarok{
+        width: 90%;
+        
+    }
+  }
+  /*FIN OTROS AUTOS*/
+
+  /*FOOTER*/
+  html.paginaVento footer {
+    margin-top: 15rem;
+    font-size: 1.5rem;
+    padding: 0rem;
+    
+
+  }
+  html.paginaVento footer div h3{
+    font-size: 2rem;
+  }
+  html.paginaVento footer div img{
+    width: auto;
+    height: 5vh;
+}
+}
+/*fin footer*/
+
+
+/*-----FIN--------*/
+
+
+
+
+/*-----FIN PAGINA VENTO--------*/
+
+
+/*--------INICIO GOLF GTI--------*/
+html.paginaGolfGti * {
+  margin: 0;
+  padding: 0;
+
+}
+
+@media(max-width: 599px) {
+  html.paginaGolfGti body {
+      height: 100vh;
+      width: 100vh;
+
+  }
+
+  /*navbar-------*/
+  html.paginaGolfGti .navbar {
+      width: 100%;
+      background-color: #f4f4f4;
+
+      .btn {
+          font-size: 3vw;
+          font-weight: 600;
+      }
+  }
+
+  /*FIN-------navbar---------*/
+
+
+  /*-----DETALLES COMPRA----*/
+  html.paginaGolfGti .golfgti {
+      width: 100vh;
+      height: auto;
+      margin-top: 5rem;
+  }
+
+  html.paginaGolfGti .dataCompra {
+      .letrasAuto {
+
+          display: flex;
+          flex-direction: column;
+          margin-top: 2rem;
+          margin-left: 0;
+          gap: 1rem;
+          text-align: center;
+
+          .btn {
+              display: block;
+              width: 50vh;
+              align-items: center;
+              margin-left: 25vh;
+              font-size: 5vh;
+          }
+      }
+  }
+
+  html.paginaGolfGti .letrasAuto {
+      color: black;
+      font-size: xx-large;
+
+  }
+
+  /*-----FIN DETALLES COMPRA-----*/
+
+  html.paginaGolfGti .espacioDesc {
+      display: block;
+      width: 100vh;
+      background-color: #f4f4f4;
+      text-align: center;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      color: black;
+      font-size: 5vh;
+
+  }
+
+  /*-----DESCRIPCION------*/
+  html.paginaGolfGti .contenedorDes {
+      position: static;
+      font-size: 4vh;
+      margin-top: 3rem;
+      margin-left: 1rem;
+  }
+
+  html.paginaGolfGti .primeraParte {
+      gap: 0.5rem;
+      margin-left: 0.5rem;
+      padding: 0;
+  }
+
+  html.paginaGolfGti .consumo {
+      display: flex;
+      margin-left: 1rem;
+      flex-direction: column;
+
+
+      p {
+          padding-left: 1rem;
+      }
+  }
+
+  html.paginaGolfGti .txtDescripcion {
+      margin: 0.25rem;
+  }
+
+  html.paginaGolfGti .parteFinal {
+      margin-left: 0.5rem;
+  }
+
+  /*-------FIN DESCRIPCION-----*/
+  html.paginaGolfGti .tituloOtrosAutos{
+      font-size: 3rem;
+      text-align: center;
+      margin-top: 10rem;
+  }
+  html.paginaGolfGti .otrosAutos {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      align-items: center;
+      font-size: 3.5vh;
+      font-weight: 600;
+      margin-top: 3rem;
+
+      .vento {
+          width: 50vh;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+      }
+
+      .amarok {
+          width: 50vh;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+      }
+
+      .golfr {
+          width: 50vh;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+
+      }
+
+  }
+
+
+  /*footer*/
+  html.paginaGolfGti footer {
+      text-align: center;
+      display: inline-block;
+      padding: 1rem;
+      background-color: #f4f4f4;
+      margin-top: 2rem;
+      width: 100vh;
+  }
+
+  html.paginaGolfGti footer div {
+      display: inline-block;
+      margin: 0.5rem;
+  }
+
+  html.paginaGolfGti footer div img {
+      width: 40px;
+      height: 40px;
+  }
+
+  /*fin footer*/
+}
+
+
+
+
+
+
+
+
+
+
+/*---ADAPTACION PANTALLAS-----*/
+
+/*---Tablet---*/
+@media (min-width: 600px) {
+
+
+  html.paginaGolfGti body {
+      height: 100vh;
+      width: 100vw;
+  }
+
+  /*NAVBAR*/
+  html.paginaGolfGti .navbar {
+      width: 100%;
+      background-color: #f4f4f4;
+
+      .btn {
+          font-size: 3vw;
+      }
+  }
+
+  /*FIN NAVBAR*/
+
+
+  /*DATA*/
+  html.paginaGolfGti .dataCompra {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .letrasAuto {
+          .nombreAuto {
+              font-size: 3.5rem;
+          }
+
+          .precioAuto {
+              font-size: 3.5rem;
+              margin-top: 1rem;
+          }
+      }
+  }
+
+  html.paginaGolfGti .golfgti {
+      width: 80%;
+      max-height: auto;
+      display: flex;
+      margin-top: 5rem;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10%;
+
+  }
+
+  html.paginaGolfGti .dataCompra .btn {
+      width: 40%;
+      margin-top: 1rem;
+      font-size: 2rem;
+  }
+
+  /*FIN DATA*/
+  /*DESCRPCION*/
+  html.paginaGolfGti .espacioDesc {
+      font-size: 2rem;
+      margin-top: 10rem;
+      background-color: #f4f4f4;
+      text-align: center;
+
+  }
+
+  html.paginaGolfGti .contenedorDes {
+      font-size: 2rem;
+      font-size: 1.5rem;
+      margin-top: 5rem;
+      margin-left: 1rem;
+  }
+
+  /*FIN DESCRIPCION*/
+  /*OTROS AUTOS*/
+  html.paginaGolfGti .otrosAutos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 2.5rem;
+      margin-top: 12rem;
+      align-items: center;
+      justify-content: center;
+
+      .vento {
+          width: 52vw;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+      }
+
+      .amarok {
+          width: 50vw;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+      }
+
+      .golfr {
+          width: 55vw;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+
+      }
+      
+  }
+  html.paginaGolfGti .tituloOtrosAutos {
+      font-size: 3rem;
+      text-align: center;
+      margin-top: 20%;
+  }
+  
+
+
+  /*FOOTER*/
+  html.paginaGolfGti footer {
+      text-align: center;
+      margin-top: 15rem;
+      background-color: #f4f4f4;
+      display: inline-block;
+      width: 100vw;
+      padding: 1rem;
+      
+
+  }
+
+  html.paginaGolfGti footer h3 {
+      font-size: 3rem;
+  }
+
+  html.paginaGolfGti footer div {
+      display: inline-block;
+      margin: 0.25rem;
+  }
+
+  html.paginaGolfGti footer div img {
+      width: 6vw;
+      height: 6vw;
+      margin: 1rem;
+  }
+
+  /*FIN FOOTER*/
+}
+
+/* Ordenador (1024px y superiores) */
+@media (min-width: 1024px) {
+  html.paginaGolfGti .body{
+      max-height: 100vh;
+  }
+  html.paginaGolfGti .navbar {
+      width: 100%;
+      padding: 1rem;
+      .btn {
+          font-size: 1.5rem;
+      }
+  }
+/*MAIN*/
+html.paginaGolfGti .dataCompra{
+      margin-top: 10rem;
+      display: flex;
+      background-color: #f4f4f4;
+      flex-direction: row;
+      
+      justify-content:left;
+
+      .golfgti{
+          width: 40%;
+          
+          margin-left: 2rem;
+      }
+
+      .letrasAuto{
+          margin-left: 15%;
+          margin-top: 5%;
+          
+          .nombreAuto{
+              font-size: 3rem;
+          }
+          .precioAuto{
+              font-size: 2rem;
+              margin-top: 1rem;
+          }
+          
+      }
+      .btn{
+          width: 100%;
+          font-size: 2rem;
+          margin-top: 2rem;
+      }
+  }
+/*FIN MAIN*/
+
+
+
+/*DESCRIPCION*/
+html.paginaGolfGti .espacioDesc {
+      font-size: 2rem;
+      margin-top: 15rem;
+  }
+
+  html.paginaGolfGti .contenedorDes {
+      font-size: 1.5rem;
+      margin-top: 5rem;
+  }
+  html.paginaGolfGti .consumo{
+      .txtDescripcion{
+          margin-left: 2rem;
+      }
+  }
+/*FIN DESC*/
+
+
+/*OTROS AUTOS*/
+html.paginaGolfGti .tituloOtrosAutos,html.paginaGolfR .tituloOtrosAutos, html.paginaVento .tituloOtrosAutos {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 15rem;
+  }
+  html.paginaGolfGti .otrosAutos, html.paginaVento .otrosAutos,html.paginaGolfR .otrosAutos {
+      gap: 1rem;
+      margin-top: 5rem;
+      display: flex;
+      background-color: #f4f4f4;
+      align-items: baseline;
+      flex-direction: row;
+      font-size: 2rem;
+      
+      
+      
+      .golfr{
+          width: 70%;
+          
+      }
+      .amarok{
+          width: 80%;
+
+          
+      }
+      .vento{
+          width: 70%;
+          
+      }
+  }
+/*FIN OTROS AUTOS*/
+
+/*FOOTER*/
+html.paginaGolfGti footer,html.paginaGolfR footer, html.paginaVento footer  {
+      margin-top: 15rem;
+      font-size: 1rem;
+      padding: 0  ;
+  
+      
+  }
+  html.paginaGolfGti footer div h3, html.paginaGolfR footer div h3, html.paginaVento footer div h3{
+      font-size:1.5rem;
+  }
+  html.paginaGolfGti footer div img, html.paginaGolfR footer div img,html.paginaVento footer div img{
+      width: auto;
+      height: 5vh;
+  }
+}
+/*fin footer*/
+
+
+/*-----FIN--------*/
+html.paginaAmarok * {
+  margin: 0;
+  padding: 0;
+
+}
+
+@media(max-width: 599px) {
+  html.paginaAmarok body {
+      height: 100vh;
+      width: 100vh;
+
+  }
+
+  /*navbar-------*/
+  html.paginaAmarok .navbar {
+      width: 100vh;
+      background-color: #f4f4f4;
+
+      .btn {
+          font-size: 2rem;
+          font-weight: 600;
+      }
+  }
+
+  /*FIN-------navbar---------*/
+
+
+  /*-----DETALLES COMPRA----*/
+  html.paginaAmarok .amarok {
+      width: 100vh;
+      margin-top: 5rem;
+      height: auto;
+  }
+
+  html.paginaAmarok .dataCompra {
+      .letrasAuto {
+
+          display: flex;
+          flex-direction: column;
+          margin-top: 2rem;
+          margin-left: 0;
+          gap: 1rem;
+          text-align: center;
+
+          .nombreAuto{
+              text-align: center;
+          }
+
+          .btn {
+              display: block;
+              width: 50vh;
+              align-items: center;
+              margin-left: 25vh;
+              font-size: 5vh;
+          }
+      }
+  }
+
+  html.paginaAmarok .letrasAuto {
+      color: black;
+      font-size: xx-large;
+
+  }
+
+  /*-----FIN DETALLES COMPRA-----*/
+
+  html.paginaAmarok .espacioDesc {
+      display: block;
+      width: 100vh;
+      background-color: #f4f4f4;
+      text-align: center;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      color: black;
+      font-size: 5vh;
+
+  }
+
+  /*-----DESCRIPCION------*/
+  html.paginaAmarok .contenedorDes {
+      position: static;
+      font-size: 4vh;
+      margin-top: 3rem;
+      margin-left: 1rem;
+  }
+
+  html.paginaAmarok .primeraParte {
+      gap: 0.5rem;
+      margin-left: 0.5rem;
+      padding: 0;
+  }
+
+  html.paginaAmarok .consumo {
+      display: flex;
+      margin-left: 1rem;
+      flex-direction: column;
+
+
+      p {
+          padding-left: 1rem;
+      }
+  }
+
+  html.paginaAmarok .txtDescripcion {
+      margin: 0.25rem;
+  }
+
+  html.paginaAmarok .parteFinal {
+      margin-left: 0.5rem;
+  }
+
+  /*-------FIN DESCRIPCION-----*/
+  html.paginaAmarok .tituloOtrosAutos{
+      font-size: 3rem;
+      text-align: center;
+      margin-top: 10rem;
+  }
+  
+  html.paginaAmarok .otrosAutos {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      align-items: center;
+      font-size: 3.5vh;
+      font-weight: 600;
+      margin-top: 3rem;
+
+      .vento {
+          width: 50vh;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+      }
+
+      .golfgti {
+          width: 50vh;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+      }
+
+      .golfr {
+          width: 50vh;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+
+      }
+
+  }
+
+
+  /*footer*/
+  html.paginaAmarok footer {
+      text-align: center;
+      display: inline-block;
+      padding: 1rem;
+      background-color: #f4f4f4;
+      margin-top: 2rem;
+      width: 100vh;
+  }
+
+  html.paginaAmarok footer div {
+      display: inline-block;
+      margin: 0.5rem;
+  }
+
+  html.paginaAmarok footer div img {
+      width: 40px;
+      height: 40px;
+  }
+
+  /*fin footer*/
+}
+
+
+
+
+
+
+
+
+
+
+/*---ADAPTACION PANTALLAS-----*/
+
+/*---Tablet---*/
+@media (min-width: 600px) {
+
+
+  html.paginaAmarok body {
+      height: 100vh;
+      width: 100vw;
+  }
+
+  /*NAVBAR*/
+  html.paginaAmarok .navbar {
+      width: 100%;
+      background-color: #f4f4f4;
+
+      .btn {
+          font-size: 3vw;
+      }
+  }
+
+  /*FIN NAVBAR*/
+
+
+  /*DATA*/
+
+  html.paginaAmarok .amarok {
+      width: 80%;
+      margin-top: 5rem;
+      justify-content: center;
+      margin-left: 10%;
+
+  }
+
+
+  html.paginaAmarok .dataCompra {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      
+
+      .letrasAuto {
+          margin-top: 5rem;
+          .nombreAuto {
+              font-size: 3.5rem;
+          }
+
+          .precioAuto {
+              font-size: 3.5rem;
+              margin-top: 1rem;
+          }
+      }
+  }
+
+  
+
+  html.paginaAmarok .dataCompra .btn {
+      width: 40%;
+      margin-top: 1rem;
+      font-size: 2rem;
+  }
+
+  /*FIN DATA*/
+  /*DESCRPCION*/
+  html.paginaAmarok .espacioDesc {
+      font-size: 2rem;
+      margin-top: 10rem;
+      background-color: #f4f4f4;
+      text-align: center;
+
+  }
+
+  html.paginaAmarok .contenedorDes {
+      font-size: 2rem;
+      font-size: 1.5rem;
+      margin-top: 5rem;
+      margin-left: 1rem;
+  }
+
+  /*FIN DESCRIPCION*/
+  /*OTROS AUTOS*/
+  html.paginaAmarok .otrosAutos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 2.5rem;
+      margin-top: 12rem;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      .vento {
+          width: 52vw;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+      }
+
+      .golfgti {
+          width: 50vw;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+      }
+
+      .golfr {
+          width: 55vw;
+          text-decoration: none;
+          color: black;
+          text-align: center;
+
+      }
+      
+  }
+
+  html.paginaAmarok .tituloOtrosAutos {
+          font-size: 3rem;
+          text-align: center;
+          margin-top: 20%;
+      }
+
+
+  /*FOOTER*/
+  html.paginaAmarok footer {
+      text-align: center;
+      margin-top: 15rem;
+      background-color: #f4f4f4;
+      display: inline-block;
+      width: 100vw;
+      padding: 1rem;
+      
+
+  }
+
+  html.paginaAmarok footer h3 {
+      font-size: 3rem;
+  }
+
+  html.paginaAmarok footer div {
+      display: inline-block;
+      margin: 0.25rem;
+  }
+
+  html.paginaAmarok footer div img {
+      width: 6vw;
+      height: 6vw;
+      margin: 1rem;
+  }
+
+  /*FIN FOOTER*/
+}
+
+/* Ordenador (1024px y superiores) */
+@media (min-width: 1024px) {
+  html.paginaAmarok .navbar {
+      width: 100%;
+      padding: 1rem;
+
+      .btn {
+          font-size: 1.5rem;
+      }
+  }
+/*MAIN*/
+html.paginaAmarok .dataCompra{
+      margin-top: 10rem;
+      display: flex;
+      flex-direction: row;
+      background-color: #f4f4f4;
+      justify-content:left;
+      align-items: center;
+      .amarok{
+          width: 40%;
+          margin-left: 2rem;
+          background-color: #f4f4f4;
+      }
+      .letrasAuto{
+          
+          margin-left: 15%;
+          margin-top: 5%;
+          .nombreAuto{
+              font-size: 3rem;
+          }        
+          .precioAuto{
+              font-size: 2rem;
+              margin-top: 1rem;
+          }
+      }
+      .btn{
+          width: 100%;
+          font-size: 2rem;
+      }
+  }
+/*FIN MAIN*/
+
+
+
+/*DESCRIPCION*/
+html.paginaAmarok .espacioDesc {
+      font-size: 2rem;
+      margin-top: 15rem;
+  }
+
+  html.paginaAmarok .contenedorDes {
+      font-size: 1.5rem;
+      margin-top: 5rem;
+  }
+  html.paginaAmarok .consumo{
+      .txtDescripcion{
+          margin-left: 2rem;
+      }
+  }
+/*FIN DESC*/
+
+
+/*OTROS AUTOS*/
+html.paginaAmarok .tituloOtrosAutos{
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 30rem;
+  }
+  html.paginaAmarok .otrosAutos {
+      gap: 2rem;
+      margin-top: 0rem;
+      display: flex;
+      background-color: #f4f4f4;
+      align-items: baseline;
+      flex-direction: row;
+      font-size: 2rem;
+      .golfr{
+          width: 75%;
+      }
+      .golfgti{
+          width: 75%;
+          
+      }
+      .vento{
+          width: 75%;
+          
+      }
+  }
+/*FIN OTROS AUTOS*/
+
+/*FOOTER*/
+html.paginaAmarok footer {
+      margin-top: 15rem;
+      font-size: 1.5rem;
+      padding: 0rem;
+      
+
+  }
+  html.paginaAmarok footer div h3{
+      font-size: 2rem;
+  }
+  html.paginaAmarok footer div img{
+      width: auto;
+      height: 5vh;
+  }
+}
+/*fin footer*/
+
+
+/*-----FIN--------*/
