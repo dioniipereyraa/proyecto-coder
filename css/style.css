@@ -34,11 +34,11 @@ header {
 
 .contenedor {
   display: flex;
-  position: relative; /* Agregado */
+  position: relative; 
   flex-direction: column;
   align-items: center;
   max-height: 35rem;
-  justify-content: center; /* Centrar el contenido verticalmente */
+  justify-content: center; 
 }
 
 .textoMain {
