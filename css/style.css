@@ -313,7 +313,7 @@ html.paginaMain footer div img {
 /*FIN PAGINA MAIN*/
 
 /*INICIO PAGINA GOLFR*/
-html.paginaGolfR * {
+html.paginaSec * {
   margin: 0;
   padding: 0;
 
@@ -754,4 +754,4 @@ html.paginaSec footer {
 /*fin footer*/
 
 
-/*-----FIN PAGINA GOLF R----------------------------------------------------------------------------*/
+/*-----FIN PAGINA Sec----------------------------------------------------------------------------*/
