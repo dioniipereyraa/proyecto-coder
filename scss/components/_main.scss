@@ -1,9 +1,11 @@
 $primary-color: rgb(221, 220, 220);
 $sec-color: #f4f4f4;
 $box-color: grey;
+$theme: light;
 
 
 body {
+    
     main {
         
         .contenedor {
@@ -61,6 +63,7 @@ body {
                 justify-content: center;
                 text-decoration: none;
                 align-items: center;
+                margin-bottom:0 ;
 
                 img {
                     max-width: 100%;
@@ -88,7 +91,7 @@ body {
                 gap: 1rem;
                 width: 100%;
                 flex-wrap: wrap;
-                margin: 0 auto;
+                margin: 0 ;
 
                 .vento {
                     display: block;
@@ -105,8 +108,8 @@ body {
 
                     img {
                         margin-top: 3rem;
-                        max-width: 27rem;
-                        max-height: 27rem;
+                        
+                        height: 27rem;
 
                     }
 
@@ -136,7 +139,7 @@ body {
 
                     .golfgtii {
                         margin-top: 0rem;
-                        max-width: auto;
+                        
                         height: 17rem;
                         margin-left: -1rem;
 
@@ -160,8 +163,8 @@ body {
 
                     img {
                         margin-top: 2rem;
-                        max-width: 35rem;
-                        max-height: 35rem;
+                        
+                        height: 35rem;
                         margin-left: -4rem;
                     }
 

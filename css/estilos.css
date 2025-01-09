@@ -92,6 +92,7 @@ body main .sectionNovedades .productosDestacados {
   justify-content: center;
   text-decoration: none;
   align-items: center;
+  margin-bottom: 0;
 }
 body main .sectionNovedades .productosDestacados img {
   max-width: 100%;
@@ -114,7 +115,7 @@ body main .sectionRec .productosRecomendados {
   gap: 1rem;
   width: 100%;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0;
 }
 body main .sectionRec .productosRecomendados .vento {
   display: block;
@@ -131,8 +132,7 @@ body main .sectionRec .productosRecomendados .vento {
 }
 body main .sectionRec .productosRecomendados .vento img {
   margin-top: 3rem;
-  max-width: 27rem;
-  max-height: 27rem;
+  height: 27rem;
 }
 body main .sectionRec .productosRecomendados .vento p {
   margin-top: 1.5rem;
@@ -156,7 +156,6 @@ body main .sectionRec .productosRecomendados .golfgti p {
 }
 body main .sectionRec .productosRecomendados .golfgti .golfgtii {
   margin-top: 0rem;
-  max-width: auto;
   height: 17rem;
   margin-left: -1rem;
 }
@@ -177,8 +176,7 @@ body main .sectionRec .productosRecomendados .amarok {
 }
 body main .sectionRec .productosRecomendados .amarok img {
   margin-top: 2rem;
-  max-width: 35rem;
-  max-height: 35rem;
+  height: 35rem;
   margin-left: -4rem;
 }
 body main .sectionRec .productosRecomendados .amarok p {
@@ -325,21 +323,55 @@ body main .otrosAutos .otroAuto3 {
   body {
     width: 100vw;
     height: 100vh;
+    /*PAGINAS SEC*/
   }
-  body header .navbar {
+  body header .navBar {
     width: 100vw;
     background-color: #f4f4f4;
   }
-  body header .navbar .btn {
+  body header .navBar .btn {
     font-size: 2rem;
     font-weight: 600;
+  }
+  body main {
+    /*PAGINAS SEC*/
+  }
+  body main .contenedor {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    max-height: 35rem;
+    justify-content: center;
+  }
+  body main .contenedor .bienvenidaFoto {
+    width: 100vw;
+    height: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    top: -40rem;
+  }
+  body main .contenedor .textoMain {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-size: clamp(1.5rem, 5vw, 4rem);
+    font-weight: 900;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    margin: 0;
   }
   body main .contenedorTotal .dataCompra {
     display: block;
   }
   body main .contenedorTotal .dataCompra .auto {
     display: block;
-    width: 100vw;
+    width: 90vw;
     margin-top: 5rem;
     height: auto;
     margin-left: 0;
@@ -387,6 +419,49 @@ body main .otrosAutos .otroAuto3 {
   body main .contenedorTotal div .txtDescripcion {
     font-size: 2vh;
   }
+  body main .sectionRec h2 {
+    color: black;
+  }
+  body main .sectionRec .productosRecomendados {
+    width: 100vw;
+  }
+  body main .sectionRec .productosRecomendados .amarok {
+    width: 90vw;
+    height: auto;
+  }
+  body main .sectionRec .productosRecomendados .amarok img {
+    width: 100vw;
+    max-height: fit-content;
+  }
+  body main .sectionRec .productosRecomendados .amarok p {
+    text-align: center;
+  }
+  body main .sectionRec .productosRecomendados .vento {
+    width: 90vw;
+    height: auto;
+  }
+  body main .sectionRec .productosRecomendados .vento img {
+    width: 80vw;
+    max-height: fit-content;
+  }
+  body main .sectionRec .productosRecomendados .vento p {
+    text-align: center;
+  }
+  body main .sectionRec .productosRecomendados .golfgti {
+    width: 90vw;
+    height: auto;
+  }
+  body main .sectionRec .productosRecomendados .golfgti img {
+    width: 80vw;
+    max-height: fit-content;
+  }
+  body main .sectionRec .productosRecomendados .golfgti p {
+    text-align: center;
+  }
+  body main .sectionGrid {
+    width: 90vw;
+    margin-left: 5%;
+  }
   body main .tituloOtrosAutos {
     font-size: 2rem;
     text-align: center;
@@ -401,6 +476,7 @@ body main .otrosAutos .otroAuto3 {
     font-weight: 600;
     margin-top: 3rem;
     margin: 0;
+    width: 100%;
   }
   body main .otrosAutos p {
     font-size: 1rem;
@@ -445,7 +521,99 @@ body main .otrosAutos .otroAuto3 {
   /*-------FIN DESCRIPCION-----*/
   /*navbar-------*/
 }
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 1024px) {
+  body main {
+    /*FIN PAG MAIN  */
+  }
+  body main .contenedor .textoMain {
+    margin-left: 10%;
+    top: 50%;
+  }
+  body main .sectionRec .productosRecomendados .amarok {
+    width: 70vw;
+  }
+  body main .sectionRec .productosRecomendados .amarok img {
+    margin-top: 0;
+    width: 80vw;
+    height: auto;
+  }
+  body main .sectionRec .productosRecomendados .golfgti {
+    width: 70vw;
+  }
+  body main .sectionRec .productosRecomendados .golfgti img {
+    width: 60vw;
+    height: auto;
+  }
+  body main .sectionRec .productosRecomendados .golfgti p {
+    text-align: left;
+  }
+  body main .sectionRec .productosRecomendados .vento {
+    width: 70vw;
+  }
+  body main .sectionRec .productosRecomendados .vento img {
+    width: 60vw;
+    height: auto;
+    margin-top: 0;
+  }
+  body main .contenedorTotal .dataCompra {
+    margin-bottom: 15%;
+  }
+  body main .contenedorTotal .dataCompra .auto {
+    width: 55vw;
+    margin: 0;
+  }
+  body main .contenedorTotal .dataCompra .letrasAuto {
+    margin-left: 1.5rem;
+  }
+  body main .contenedorTotal .dataCompra .letrasAuto .nombreAuto {
+    font-size: 2rem;
+  }
+  body main .contenedorTotal .dataCompra .letrasAuto .precioAuto {
+    font-size: 2rem;
+  }
+  body main .contenedorTotal .espacioDesc {
+    font-size: 2rem;
+  }
+  body main .contenedorTotal .contenedorDes .txtDescripcion {
+    font-size: 1.5rem;
+  }
+  body main .contenedorTotal .contenedorDes .consumo {
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+  body main .otrosAutos {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    font-size: 3vh;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin: 0;
+    width: 100%;
+  }
+  body main .otrosAutos p {
+    font-size: 1rem;
+  }
+  body main .otrosAutos .otroAuto1 {
+    width: 50vw;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+  body main .otrosAutos .otroAuto2 {
+    width: 50vw;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin: 0;
+  }
+  body main .otrosAutos .otroAuto3 {
+    width: 60vw;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
   footer {
     text-align: center;
     margin-top: 15rem;
@@ -455,7 +623,7 @@ body main .otrosAutos .otroAuto3 {
     padding: 1rem;
   }
   footer h3 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   footer div {
     display: inline-block;
@@ -475,6 +643,18 @@ body main .otrosAutos .otroAuto3 {
   .navbar .btn {
     font-size: 1.5rem;
   }
+  body main .sectionRec .productosRecomendados .golfgti img {
+    width: 25vw;
+    height: fit-content;
+  }
+  body main .sectionRec .productosRecomendados .vento img {
+    width: 25vw;
+    height: fit-content;
+  }
+  body main .sectionRec .productosRecomendados .amarok img {
+    width: 30vw;
+    height: fit-content;
+  }
   /*MAIN*/
   .dataCompra {
     margin-top: 10rem;
@@ -483,14 +663,15 @@ body main .otrosAutos .otroAuto3 {
     background-color: #f4f4f4;
     justify-content: left;
     align-items: center;
+    margin-bottom: 15%;
   }
   .dataCompra .auto {
-    width: 40%;
+    width: 40vw;
     margin-left: 2rem;
     background-color: #f4f4f4;
   }
   .dataCompra .letrasAuto {
-    margin-left: 15%;
+    margin-left: 90%;
     margin-top: 5%;
   }
   .dataCompra .letrasAuto .nombreAuto {
@@ -514,8 +695,16 @@ body main .otrosAutos .otroAuto3 {
     font-size: 1.5rem;
     margin-top: 5rem;
   }
+  .txtDescripcion {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+  .consumo {
+    font-weight: 600;
+  }
   .consumo .txtDescripcion {
     margin-left: 2rem;
+    font-size: 1.5rem;
   }
   /*FIN DESC*/
   /*OTROS AUTOS*/
@@ -532,6 +721,7 @@ body main .otrosAutos .otroAuto3 {
     align-items: baseline;
     flex-direction: row;
     font-size: 2rem;
+    margin-bottom: 15%;
   }
   .otrosAutos .otroAuto1 {
     width: 80%;
@@ -546,16 +736,26 @@ body main .otrosAutos .otroAuto3 {
     text-decoration: none;
   }
   footer {
-    margin-top: 15rem;
-    font-size: 1.5rem;
-    padding: 0rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    background-color: rgb(221, 220, 220);
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
   }
-  footer div h3 {
+  footer h3 {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  footer div {
+    display: inline-block;
+    margin: 0.5rem;
   }
   footer div img {
-    width: auto;
-    height: 4vh;
+    width: 40px;
+    height: 40px;
   }
 }
 
