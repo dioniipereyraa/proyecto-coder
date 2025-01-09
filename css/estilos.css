@@ -2,87 +2,30 @@ footer {
   background-color: rgb(221, 220, 220);
 }
 
-html.paginaMain footer {
+main footer {
   text-align: center;
+  display: flex;
+  flex-direction: row;
   padding: 1rem;
   background-color: rgb(221, 220, 220);
-  margin-top: 2rem;
+  margin-top: 5%;
+  align-items: center;
 }
-html.paginaMain footer h3 {
-  font-size: 1.2rem;
+main footer h3 {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-html.paginaMain footer div {
+main footer div {
   display: inline-block;
   margin: 0.5rem;
 }
-html.paginaMain footer div img {
+main footer div img {
   width: 40px;
   height: 40px;
 }
 
-@media (max-width: 599px) {
-  html.paginaMain footer {
-    max-height: fit-content;
-    width: 100vh;
-  }
-  html.paginaSec footer {
-    text-align: center;
-    display: inline-block;
-    padding: 1rem;
-    background-color: #f4f4f4;
-    margin-top: 2rem;
-    width: 100vh;
-  }
-  html.paginaSec footer div {
-    display: inline-block;
-    margin: 0.5rem;
-  }
-  html.paginaSec footer div img {
-    width: 40px;
-    height: 40px;
-  }
-}
-@media (min-width: 600px) {
-  html.paginaSec footer {
-    text-align: center;
-    margin-top: 15rem;
-    background-color: #f4f4f4;
-    display: inline-block;
-    width: 100vw;
-    padding: 1rem;
-  }
-  html.paginaSec footer h3 {
-    font-size: 3rem;
-  }
-  html.paginaSec footer div {
-    display: inline-block;
-    margin: 0.25rem;
-  }
-  html.paginaSec footer div img {
-    width: 6vw;
-    height: 6vw;
-    margin: 1rem;
-  }
-}
-@media (min-width: 1024px) {
-  html.paginaSec footer {
-    margin-top: 15rem;
-    font-size: 1.5rem;
-    padding: 0rem;
-  }
-  html.paginaSec footer div h3 {
-    font-size: 1.5rem;
-  }
-  html.paginaSec footer div img {
-    width: auto;
-    height: 5vh;
-  }
-}
-html.paginaMain navbar {
-  margin: 1rem;
-}
-html.paginaMain header {
+body header {
+  background-color: rgb(221, 220, 220);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,14 +33,16 @@ html.paginaMain header {
   text-align: center;
   padding: 0rem;
 }
-html.paginaMain .bienvenidaFoto {
-  width: 100%;
-  height: 50%;
-  object-fit: cover;
-  overflow: hidden;
-  top: -40rem;
+body header .navbar {
+  padding: 1rem;
+  width: 100vw;
+  background-color: rgb(221, 220, 220);
 }
-html.paginaMain .contenedor {
+body header .navbar a {
+  color: black;
+}
+
+body main .contenedor {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -105,7 +50,14 @@ html.paginaMain .contenedor {
   max-height: 35rem;
   justify-content: center;
 }
-html.paginaMain .textoMain {
+body main .contenedor .bienvenidaFoto {
+  width: 100vw;
+  height: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  top: -40rem;
+}
+body main .contenedor .textoMain {
   position: absolute;
   top: 60%;
   left: 20%;
@@ -120,108 +72,42 @@ html.paginaMain .textoMain {
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
   margin: 0;
 }
-
-@media (max-width: 599px) {
-  html.paginaMain .bienvenidaFoto {
-    width: 100vh;
-    object-fit: cover;
-    height: 40vh;
-  }
-  html.paginaMain .textoMain {
-    font-size: 3rem;
-    width: 50vh;
-    top: 40%;
-    left: 30%;
-  }
-  html.paginaSec .navbar {
-    width: 100vh;
-    background-color: #f4f4f4;
-  }
-  html.paginaSec .navbar .btn {
-    font-size: 3rem;
-    font-weight: 600;
-  }
-}
-html.paginaMain {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  /* INICIO GRID */
-  /*FIN GRID*/
-}
-html.paginaMain body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: aliceblue;
-  line-height: 1.6;
-}
-html.paginaMain main {
-  padding: 2rem;
-}
-html.paginaMain section {
-  margin-bottom: 2rem;
-}
-html.paginaMain .novedades {
+body main .sectionNovedades .novedades {
   font-size: 3rem;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: capitalize;
   text-shadow: #060606;
   color: #2a2929;
   text-decoration: none;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  font-weight: 700;
+  text-shadow: #ccc;
 }
-html.paginaMain h2 {
+body main .sectionNovedades .productosDestacados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+}
+body main .sectionNovedades .productosDestacados img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  text-decoration: none;
+}
+body main .sectionNovedades .productosDestacados a,
+body main .sectionNovedades .productosDestacados p {
   text-align: center;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
-  text-decoration: none;
-}
-html.paginaMain .productosDestacados {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  text-decoration: none;
-  align-items: center;
-}
-html.paginaMain section div {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  text-decoration: none;
-  align-items: center;
-}
-html.paginaMain section div img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  text-decoration: none;
-}
-html.paginaMain section div p {
-  text-align: center;
-  font-size: 1rem;
   font-weight: 550;
   color: black;
   text-decoration: none;
 }
-html.paginaMain .productosDestacados a {
-  text-decoration: none;
-}
-html.paginaMain .productosDestacados img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  text-decoration: none;
-}
-html.paginaMain .productosDestacados p {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 550;
-  color: black;
-  text-decoration: none;
-}
-html.paginaMain .productosRecomendados {
+body main .sectionRec .productosRecomendados {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,11 +116,11 @@ html.paginaMain .productosRecomendados {
   flex-wrap: wrap;
   margin: 0 auto;
 }
-html.paginaMain .vento {
+body main .sectionRec .productosRecomendados .vento {
   display: block;
   padding: 2rem;
   border: solid;
-  border-color: grey;
+  border-color: gray;
   border-radius: 2%;
   background-color: rgb(221, 220, 220);
   box-shadow: none;
@@ -243,15 +129,16 @@ html.paginaMain .vento {
   border-width: 1px;
   text-decoration: none;
 }
-html.paginaMain .vento img {
+body main .sectionRec .productosRecomendados .vento img {
   margin-top: 3rem;
   max-width: 27rem;
   max-height: 27rem;
 }
-html.paginaMain .vento p {
+body main .sectionRec .productosRecomendados .vento p {
   margin-top: 1.5rem;
+  color: #060606;
 }
-html.paginaMain .golfgti {
+body main .sectionRec .productosRecomendados .golfgti {
   padding: 2rem;
   border: solid;
   border-color: grey;
@@ -263,16 +150,17 @@ html.paginaMain .golfgti {
   width: 32rem;
   text-decoration: none;
 }
-html.paginaMain .golfgti .p {
-  margin-top: -0.75rem;
+body main .sectionRec .productosRecomendados .golfgti p {
+  color: #060606;
+  text-align: center;
 }
-html.paginaMain .golfgti .golfgtii {
+body main .sectionRec .productosRecomendados .golfgti .golfgtii {
   margin-top: 0rem;
   max-width: auto;
-  max-height: 18rem;
+  height: 17rem;
   margin-left: -1rem;
 }
-html.paginaMain .amarok {
+body main .sectionRec .productosRecomendados .amarok {
   display: flexbox;
   padding: 2rem;
   border: solid;
@@ -287,21 +175,28 @@ html.paginaMain .amarok {
   width: 32rem;
   text-decoration: none;
 }
-html.paginaMain .amarok img {
+body main .sectionRec .productosRecomendados .amarok img {
   margin-top: 2rem;
   max-width: 35rem;
   max-height: 35rem;
   margin-left: -4rem;
 }
-html.paginaMain .amarok p {
+body main .sectionRec .productosRecomendados .amarok p {
   margin-top: 0.75rem;
+  color: #060606;
 }
-html.paginaMain .titulo {
+body main .sectionRec h2 {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+body main .sectionGrid .titulo {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
   font-size: clamp(18px, 5vw, 1.75rem);
+  margin-top: 10%;
 }
-html.paginaMain .gridComparacion {
+body main .sectionGrid .gridComparacion {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 100%;
@@ -309,230 +204,279 @@ html.paginaMain .gridComparacion {
   gap: 5px;
   justify-content: left;
 }
-html.paginaMain .items {
+body main .sectionGrid .items {
   border: 0.5px solid #ccc;
   background-color: rgb(221, 220, 220);
   justify-content: left;
 }
-html.paginaMain .imgGrid {
-  max-width: 5%;
-  margin-top: 0.25rem;
+body main .sectionGrid .imgGrid {
+  max-width: 4%;
+  margin: 0.25rem;
   justify-content: left;
+  align-items: center;
+}
+
+/*ACA VA A ESTAR EL SCSS DE LAS PAGINAS SECUNDARIAS (NO LA PRINCIPAL)*/
+body {
+  width: 100vw;
+}
+body main .contenedorTotal .dataCompra {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  background-color: #f4f4f4;
+  justify-content: left;
+  align-items: center;
+}
+body main .contenedorTotal .dataCompra .auto {
+  width: 40%;
+  margin-left: 2rem;
+  background-color: #f4f4f4;
+}
+body main .contenedorTotal .dataCompra .letrasAuto {
+  margin-left: 15%;
+  margin-top: 5%;
+}
+body main .contenedorTotal .dataCompra .letrasAuto .nombreAuto {
+  font-size: 3rem;
+}
+body main .contenedorTotal .dataCompra .letrasAuto .precioAuto {
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+body main .contenedorTotal .dataCompra .btn {
+  width: 100%;
+  font-size: 2rem;
+}
+body main .contenedorTotal .espacioDesc {
+  display: block;
+  width: 100vw;
+  background-color: rgb(221, 220, 220);
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  color: black;
+  font-size: 5vh;
+  font-weight: 600;
+}
+body main .contenedorTotal .contenedorDes {
+  position: static;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+body main .contenedorTotal .contenedorDes .txtDescripcion {
+  margin: 0.25rem;
+}
+body main .contenedorTotal .contenedorDes .primeraParte {
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+  padding: 0;
+}
+body main .contenedorTotal .contenedorDes .consumo {
+  display: flex;
+  margin-left: 1rem;
+  flex-direction: column;
+}
+body main .contenedorTotal .contenedorDes .consumo p {
+  padding-left: 1rem;
+}
+body main .contenedorTotal .contenedorDes .parteFinal {
+  margin-left: 0.5rem;
+}
+body main .tituloOtrosAutos {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 3%;
+}
+body main .otrosAutos {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5vh;
+  font-weight: 600;
+  margin-top: 3rem;
+  background-color: #f4f4f4;
+}
+body main .otrosAutos .otroAuto1 {
+  width: 50vh;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+body main .otrosAutos .otroAuto2 {
+  width: 50vh;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+body main .otrosAutos .otroAuto3 {
+  width: 50vh;
+  text-decoration: none;
+  color: black;
+  text-align: center;
 }
 
 @media (max-width: 599px) {
-  .bienvenidaFoto {
-    width: 100vh;
-    object-fit: cover;
-    height: 40vh;
-  }
   body {
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
   }
-  .textoMain {
-    font-size: 3rem;
-    width: 50vh;
-    top: 40%;
-    left: 30%;
+  body header .navbar {
+    width: 100vw;
+    background-color: #f4f4f4;
   }
-  .productosDestacados h3 {
-    font-size: 0.9rem;
+  body header .navbar .btn {
+    font-size: 2rem;
+    font-weight: 600;
   }
-  .productosRecomendados p {
-    font-size: 0.9rem;
+  body main .contenedorTotal .dataCompra {
+    display: block;
   }
-  .gridComparacion {
-    justify-content: center;
-  }
-  .amarok {
-    width: 32rem;
-    height: auto;
-  }
-  .amarok .img {
-    width: 30rem;
-    height: auto;
-  }
-}
-@media (max-width: 599px) {
-  html.paginaSec body {
-    height: 100vh;
-    width: 100vh;
-  }
-  html.paginaSec .auto {
-    width: 100vh;
+  body main .contenedorTotal .dataCompra .auto {
+    display: block;
+    width: 100vw;
     margin-top: 5rem;
     height: auto;
+    margin-left: 0;
   }
-  html.paginaSec .dataCompra .letrasAuto {
+  body main .contenedorTotal .dataCompra .letrasAuto {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
     margin-left: 0;
     gap: 1rem;
-    text-align: center;
-  }
-  html.paginaSec .dataCompra .letrasAuto .nombreAuto {
-    text-align: center;
-  }
-  html.paginaSec .dataCompra .letrasAuto .btn {
-    display: block;
-    width: 50vh;
-    align-items: center;
-    margin-left: 25vh;
-    font-size: 5vh;
-  }
-  html.paginaSec .letrasAuto {
+    position: relative;
     color: black;
     font-size: xx-large;
   }
-  html.paginaSec .espacioDesc {
+  body main .contenedorTotal .dataCompra .letrasAuto .nombreAuto {
+    text-align: center;
+    font-size: 2rem;
+  }
+  body main .contenedorTotal .dataCompra .letrasAuto .btn {
+    display: flex;
+    width: 50vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25vw;
+    font-size: 3vh;
+  }
+  body main .contenedorTotal .dataCompra .letrasAuto .precioAuto {
+    font-size: 1.5rem;
+  }
+  body main .contenedorTotal .espacioDesc {
     display: block;
-    width: 100vh;
+    width: 100vw;
     background-color: #f4f4f4;
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 2rem;
     color: black;
-    font-size: 5vh;
+    font-size: 3vh;
   }
-  html.paginaSec .contenedorDes {
-    position: static;
-    font-size: 4vh;
-    margin-top: 3rem;
-    margin-left: 1rem;
+  body main .contenedorTotal .consumo {
+    font-size: 2vh;
+    font-weight: 500;
   }
-  html.paginaSec .primeraParte {
-    gap: 0.5rem;
-    margin-left: 0.5rem;
-    padding: 0;
+  body main .contenedorTotal div .txtDescripcion {
+    font-size: 2vh;
   }
-  html.paginaSec .consumo {
-    display: flex;
-    margin-left: 1rem;
-    flex-direction: column;
-  }
-  html.paginaSec .consumo p {
-    padding-left: 1rem;
-  }
-  html.paginaSec .txtDescripcion {
-    margin: 0.25rem;
-  }
-  html.paginaSec .parteFinal {
-    margin-left: 0.5rem;
-  }
-  html.paginaSec .tituloOtrosAutos {
-    font-size: 3rem;
+  body main .tituloOtrosAutos {
+    font-size: 2rem;
     text-align: center;
     margin-top: 10rem;
   }
-  html.paginaSec .otrosAutos {
+  body main .otrosAutos {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     align-items: center;
-    font-size: 3.5vh;
+    font-size: 3vh;
     font-weight: 600;
     margin-top: 3rem;
+    margin: 0;
   }
-  html.paginaSec .otrosAutos .otroAuto1 {
-    width: 50vh;
+  body main .otrosAutos p {
+    font-size: 1rem;
+  }
+  body main .otrosAutos .otroAuto1 {
+    width: 90vw;
     text-decoration: none;
     color: black;
     text-align: center;
   }
-  html.paginaSec .otrosAutos .otroAuto2 {
-    width: 50vh;
+  body main .otrosAutos .otroAuto2 {
+    width: 80vw;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin: 0;
+  }
+  body main .otrosAutos .otroAuto3 {
+    width: 100vw;
     text-decoration: none;
     color: black;
     text-align: center;
   }
-  html.paginaSec .otrosAutos .otroAuto3 {
-    width: 50vh;
-    text-decoration: none;
-    color: black;
+  body footer {
     text-align: center;
-  }
-}
-@media (min-width: 600px) {
-  html.paginaSec body {
-    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    margin-top: 2rem;
     width: 100vw;
   }
-  html.paginaSec .auto {
-    width: 80%;
-    margin-top: 5rem;
-    justify-content: center;
-    margin-left: 10%;
+  body footer div {
+    display: inline-block;
+    margin: 0.5rem;
   }
-  html.paginaSec .dataCompra {
-    display: flex;
+  body footer div img {
+    width: 40px;
+    height: 40px;
+  }
+  /*-------FIN DESCRIPCION-----*/
+  /*navbar-------*/
+}
+@media (min-width: 600px) {
+  footer {
     text-align: center;
-    flex-direction: column;
-  }
-  html.paginaSec .dataCompra .letrasAuto {
-    margin-top: 5rem;
-  }
-  html.paginaSec .dataCompra .letrasAuto .nombreAuto {
-    font-size: 3.5rem;
-  }
-  html.paginaSec .dataCompra .letrasAuto .precioAuto {
-    font-size: 3.5rem;
-    margin-top: 1rem;
-  }
-  html.paginaSec .dataCompra .btn {
-    width: 40%;
-    margin-top: 1rem;
-    font-size: 2rem;
-  }
-  html.paginaSec .espacioDesc {
-    font-size: 2rem;
-    margin-top: 10rem;
+    margin-top: 15rem;
     background-color: #f4f4f4;
-    text-align: center;
+    display: inline-block;
+    width: 100vw;
+    padding: 1rem;
   }
-  html.paginaSec .contenedorDes {
-    font-size: 2rem;
-    font-size: 1.5rem;
-    margin-top: 5rem;
-    margin-left: 1rem;
-  }
-  html.paginaSec .otrosAutos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 2.5rem;
-    margin-top: 12rem;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-  html.paginaSec .otrosAutos .otroAuto1 {
-    width: 52vw;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-  }
-  html.paginaSec .otrosAutos .otroAuto2 {
-    width: 50vw;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-  }
-  html.paginaSec .otrosAutos .otroAuto3 {
-    width: 55vw;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-  }
-  html.paginaSec .tituloOtrosAutos {
+  footer h3 {
     font-size: 3rem;
-    text-align: center;
-    margin-top: 20%;
+  }
+  footer div {
+    display: inline-block;
+    margin: 0.25rem;
+  }
+  footer div img {
+    width: 6vw;
+    height: 6vw;
+    margin: 1rem;
   }
 }
 @media (min-width: 1024px) {
-  html.paginaSec .dataCompra {
+  .navbar {
+    width: 100%;
+    padding: 1rem;
+  }
+  .navbar .btn {
+    font-size: 1.5rem;
+  }
+  /*MAIN*/
+  .dataCompra {
     margin-top: 10rem;
     display: flex;
     flex-direction: row;
@@ -540,43 +484,47 @@ html.paginaMain .imgGrid {
     justify-content: left;
     align-items: center;
   }
-  html.paginaSec .dataCompra .auto {
+  .dataCompra .auto {
     width: 40%;
     margin-left: 2rem;
     background-color: #f4f4f4;
   }
-  html.paginaSec .dataCompra .letrasAuto {
+  .dataCompra .letrasAuto {
     margin-left: 15%;
     margin-top: 5%;
   }
-  html.paginaSec .dataCompra .letrasAuto .nombreAuto {
+  .dataCompra .letrasAuto .nombreAuto {
     font-size: 3rem;
   }
-  html.paginaSec .dataCompra .letrasAuto .precioAuto {
+  .dataCompra .letrasAuto .precioAuto {
     font-size: 2rem;
     margin-top: 1rem;
   }
-  html.paginaSec .dataCompra .btn {
+  .dataCompra .btn {
     width: 100%;
     font-size: 2rem;
   }
-  html.paginaSec .espacioDesc {
+  /*FIN MAIN*/
+  /*DESCRIPCION*/
+  .espacioDesc {
     font-size: 2rem;
     margin-top: 15rem;
   }
-  html.paginaSec .contenedorDes {
+  .contenedorDes {
     font-size: 1.5rem;
     margin-top: 5rem;
   }
-  html.paginaSec .consumo .txtDescripcion {
+  .consumo .txtDescripcion {
     margin-left: 2rem;
   }
-  html.paginaSec .tituloOtrosAutos {
+  /*FIN DESC*/
+  /*OTROS AUTOS*/
+  .tituloOtrosAutos {
     text-align: center;
     font-size: 2.5rem;
     margin-top: 30rem;
   }
-  html.paginaSec .otrosAutos {
+  .otrosAutos {
     gap: 2rem;
     margin-top: 0rem;
     display: flex;
@@ -585,17 +533,29 @@ html.paginaMain .imgGrid {
     flex-direction: row;
     font-size: 2rem;
   }
-  html.paginaSec .otrosAutos .otroAuto1 {
+  .otrosAutos .otroAuto1 {
     width: 80%;
   }
-  html.paginaSec .otrosAutos .otroAuto2 {
+  .otrosAutos .otroAuto2 {
     width: 75%;
   }
-  html.paginaSec .otrosAutos .otroAuto3 {
+  .otrosAutos .otroAuto3 {
     width: 80%;
   }
-  html.paginaSec .otrosAutos .otroAuto3 p {
+  .otrosAutos .otroAuto3 p {
     text-decoration: none;
+  }
+  footer {
+    margin-top: 15rem;
+    font-size: 1.5rem;
+    padding: 0rem;
+  }
+  footer div h3 {
+    font-size: 1.5rem;
+  }
+  footer div img {
+    width: auto;
+    height: 4vh;
   }
 }
 

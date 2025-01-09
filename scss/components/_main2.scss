@@ -1,0 +1,137 @@
+/*ACA VA A ESTAR EL SCSS DE LAS PAGINAS SECUNDARIAS (NO LA PRINCIPAL)*/
+$primary-color: rgb(221, 220, 220);
+$sec-color: #f4f4f4;
+
+body {
+    width: 100vw;
+
+    main {
+        .contenedorTotal {
+            .dataCompra {
+
+                margin-top: 10rem;
+                display: flex;
+                flex-direction: row;
+                background-color: $sec-color;
+                justify-content: left;
+                align-items: center;
+
+                .auto {
+                    width: 40%;
+                    margin-left: 2rem;
+                    background-color: $sec-color;
+                }
+
+                .letrasAuto {
+
+                    margin-left: 15%;
+                    margin-top: 5%;
+
+                    .nombreAuto {
+                        font-size: 3rem;
+                    }
+
+                    .precioAuto {
+                        font-size: 2rem;
+                        margin-top: 1rem;
+                        text-align: center;
+                    }
+                }
+
+                .btn {
+                    width: 100%;
+                    font-size: 2rem;
+                }
+
+            }
+
+            .espacioDesc {
+                display: block;
+                width: 100vw;
+                background-color: $primary-color;
+                text-align: center;
+                margin-top: 4rem;
+                margin-bottom: 2rem;
+                color: black;
+                font-size: 5vh;
+                font-weight: 600;
+
+            }
+
+            .contenedorDes {
+                position: static;
+                font-size: 2rem;
+                margin-top: 3rem;
+                margin-left: 1rem;
+
+                .txtDescripcion {
+                    margin: 0.25rem;
+                }
+
+                .primeraParte {
+                    gap: 0.5rem;
+                    margin-left: 0.5rem;
+                    padding: 0;
+                }
+
+                .consumo {
+                    display: flex;
+                    margin-left: 1rem;
+                    flex-direction: column;
+
+
+                    p {
+                        padding-left: 1rem;
+                    }
+                }
+
+                .parteFinal {
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+
+        .tituloOtrosAutos {
+            font-size: 3rem;
+            text-align: center;
+            margin-top: 10rem;
+            margin-bottom: 3%;
+        }
+
+        .otrosAutos {
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.5vh;
+            font-weight: 600;
+            margin-top: 3rem;
+            background-color: $sec-color;
+
+            .otroAuto1 {
+                width: 50vh;
+                text-decoration: none;
+                color: black;
+                text-align: center;
+            }
+
+            .otroAuto2 {
+                width: 50vh;
+                text-decoration: none;
+                color: black;
+                text-align: center;
+            }
+
+            .otroAuto3 {
+                width: 50vh;
+                text-decoration: none;
+                color: black;
+                text-align: center;
+
+            }
+
+        }
+
+    }
+}

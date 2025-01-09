@@ -1,563 +1,215 @@
 $primary-color: rgb(221, 220, 220);
 $sec-color: #f4f4f4;
 $box-color: grey;
-html.paginaMain {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
 
-    body {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        background-color: aliceblue;
-        line-height: 1.6;
-    }
 
+body {
     main {
-        padding: 2rem;
-    }
-
-    section {
-        margin-bottom: 2rem;
-    }
-
-    .novedades {
-        font-size: 3rem;
-        font-family: Arial, Helvetica, sans-serif;
-        text-transform: capitalize;
-        text-shadow: #060606;
-        color: #2a2929;
-        text-decoration: none;
-    }
-
-    h2 {
-        text-align: center;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        text-decoration: none;
-    }
-
-    .productosDestacados {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: center;
-        text-decoration: none;
-        align-items: center;
-    }
-
-    section {
-        div {
+        
+        .contenedor {
             display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-            text-decoration: none;
+            position: relative;
+            flex-direction: column;
             align-items: center;
-
-            img {
-                max-width: 100%;
-                height: auto;
-                border-radius: 8px;
-                text-decoration: none;
-            }
-
-            p {
-                text-align: center;
-                font-size: 1rem;
-                font-weight: 550;
-                color: black;
-                text-decoration: none;
-            }
-        }
-    }
-
-    .productosDestacados {
-        a {
-            text-decoration: none;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-
-        p {
-            text-align: center;
-            font-size: 1rem;
-            font-weight: 550;
-            color: black;
-            text-decoration: none;
-        }
-    }
-
-    .productosRecomendados {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        width: 100%;
-        flex-wrap: wrap;
-        margin: 0 auto;
-    }
-
-    .vento {
-        display: block;
-        padding: 2rem;
-        border: solid;
-        border-color: $box-color;
-        border-radius: 2%;
-        background-color: $primary-color;
-        box-shadow: none;
-        height: 22rem;
-        width: 32rem;
-        border-width: 1px;
-        text-decoration: none;
-
-        img {
-            margin-top: 3rem;
-            max-width: 27rem;
-            max-height: 27rem;
-
-        }
-
-        p {
-            margin-top: 1.5rem;
-        }
-    }
-
-    .golfgti {
-        padding: 2rem;
-        border: solid;
-        border-color: $box-color;
-        border-width: 1px;
-        border-radius: 2%;
-        background-color: $primary-color;
-        box-shadow: none;
-        height: 22rem;
-        width: 32rem;
-        text-decoration: none;
-
-        .p {
-            margin-top: -0.75rem;
-        }
-
-        .golfgtii {
-            margin-top: 0rem;
-            max-width: auto;
-            max-height: 18rem;
-            margin-left: -1rem;
-
-        }
-    }
-
-    .amarok {
-        display: flexbox;
-        padding: 2rem;
-        border: solid;
-        border-width: 1px;
-        border-color: $box-color;
-        border-radius: 2%;
-        background-color: $primary-color;
-        box-shadow: none;
-        height: 22rem;
-        align-items: center;
-        justify-content: center;
-        width: 32rem;
-        text-decoration: none;
-
-        img {
-            margin-top: 2rem;
-            max-width: 35rem;
             max-height: 35rem;
-            margin-left: -4rem;
+            justify-content: center;
+
+            .bienvenidaFoto {
+                width: 100vw;
+                height: 50%;
+                object-fit: cover;
+                overflow: hidden;
+                top: -40rem;
+            }
+
+            .textoMain {
+                position: absolute;
+                top: 60%;
+                left: 20%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+                text-align: center;
+                color: white;
+                font-size: clamp(1.5rem, 5vw, 4rem);
+                font-weight: 900;
+                line-height: 1.2;
+                text-transform: uppercase;
+                text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+                margin: 0;
+            }
         }
 
-        p {
-            margin-top: 0.75rem;
+        .sectionNovedades {
+            .novedades {
+                font-size: 3rem;
+                font-family: Arial, Helvetica, sans-serif;
+                text-transform: capitalize;
+                text-shadow: #060606;
+                color: #2a2929;
+                text-decoration: none;
+                text-align: center;
+                margin-bottom: 1rem;
+                margin-top: 3rem;
+                font-weight: 700;
+                text-shadow: #ccc;
+            }
 
-        }
-
-    }
-
-    /* INICIO GRID */
-    .titulo {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: lighter;
-        font-size: clamp(18px, 5vw, 1.75rem);
-    }
-
-    .gridComparacion {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 100%;
-        max-height: fit-content;
-        gap: 5px;
-        justify-content: left;
-    }
-
-    .items {
-        border: 0.5px solid #ccc;
-        background-color: $primary-color;
-        justify-content: left;
-    }
-
-    .imgGrid {
-        max-width: 5%;
-        margin-top: 0.25rem;
-        justify-content: left;
-    }
-
-    /*FIN GRID*/
-}
-
-@media (max-width: 599px) {
-    .bienvenidaFoto {
-        width: 100vh;
-        object-fit: cover;
-        height: 40vh;
-    }
-
-    body {
-        width: 100vh;
-        height: 100vh;
-    }
-
-    .textoMain {
-        font-size: 3rem;
-        width: 50vh;
-        top: 40%;
-        left: 30%;
-    }
-
-    .productosDestacados {
-        h3 {
-            font-size: 0.9rem;
-        }
-    }
-
-    .productosRecomendados {
-        p {
-            font-size: 0.9rem;
-        }
-    }
-
-    .gridComparacion {
-        justify-content: center;
-    }
-
-    .amarok {
-        width: 32rem;
-        height: auto;
-
-        .img {
-            width: 30rem;
-            height: auto;
-        }
-    }
-}
-
-@media(max-width: 599px) {
-    html.paginaSec {
-        body {
-            height: 100vh;
-            width: 100vh;
-
-        }
-
-        .auto {
-            width: 100vh;
-            margin-top: 5rem;
-            height: auto;
-        }
-
-        .dataCompra {
-            .letrasAuto {
+            .productosDestacados{
                 display: flex;
-                flex-direction: column;
-                margin-top: 2rem;
-                margin-left: 0;
+                flex-wrap: wrap;
                 gap: 1rem;
-                text-align: center;
+                justify-content: center;
+                text-decoration: none;
+                align-items: center;
 
-                .nombreAuto {
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 8px;
+                    text-decoration: none;
+                }
+
+                a,
+                p {
                     text-align: center;
-                }
-
-                .btn {
-                    display: block;
-                    width: 50vh;
-                    align-items: center;
-                    margin-left: 25vh;
-                    font-size: 5vh;
+                    font-size: 1.5rem;
+                    font-weight: 550;
+                    color: black;
+                    text-decoration: none;
                 }
             }
         }
 
-        .letrasAuto {
-            color: black;
-            font-size: xx-large;
-
-        }
-
-        .espacioDesc {
-            display: block;
-            width: 100vh;
-            background-color: $sec-color;
-            text-align: center;
-            margin-top: 4rem;
-            margin-bottom: 2rem;
-            color: black;
-            font-size: 5vh;
-
-        }
-
-        .contenedorDes {
-            position: static;
-            font-size: 4vh;
-            margin-top: 3rem;
-            margin-left: 1rem;
-        }
-
-        .primeraParte {
-            gap: 0.5rem;
-            margin-left: 0.5rem;
-            padding: 0;
-        }
-
-        .consumo {
-            display: flex;
-            margin-left: 1rem;
-            flex-direction: column;
-
-
-            p {
-                padding-left: 1rem;
-            }
-        }
-
-        .txtDescripcion {
-            margin: 0.25rem;
-        }
-
-        .parteFinal {
-            margin-left: 0.5rem;
-        }
-
-        .tituloOtrosAutos {
-            font-size: 3rem;
-            text-align: center;
-            margin-top: 10rem;
-        }
-
-        .otrosAutos {
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
-            align-items: center;
-            font-size: 3.5vh;
-            font-weight: 600;
-            margin-top: 3rem;
-
-            .otroAuto1 {
-                width: 50vh;
-                text-decoration: none;
-                color: black;
-                text-align: center;
-            }
-
-            .otroAuto2 {
-                width: 50vh;
-                text-decoration: none;
-                color: black;
-                text-align: center;
-            }
-
-            .otroAuto3 {
-                width: 50vh;
-                text-decoration: none;
-                color: black;
-                text-align: center;
-
-            }
-
-        }
-    }
-}
-
-@media (min-width: 600px) {
-    html.paginaSec {
-        body {
-            height: 100vh;
-            width: 100vw;
-        }
-
-        .auto {
-            width: 80%;
-            margin-top: 5rem;
-            justify-content: center;
-            margin-left: 10%;
-
-        }
-
-        .dataCompra {
-            display: flex;
-            text-align: center;
-            flex-direction: column;
-
-
-            .letrasAuto {
-                margin-top: 5rem;
-
-                .nombreAuto {
-                    font-size: 3.5rem;
-                }
-
-                .precioAuto {
-                    font-size: 3.5rem;
-                    margin-top: 1rem;
-                }
-            }
-        }
-
-        .dataCompra {
-            .btn {
-                width: 40%;
-                margin-top: 1rem;
-                font-size: 2rem;
-            }
-        }
-
-        .espacioDesc {
-            font-size: 2rem;
-            margin-top: 10rem;
-            background-color: $sec-color;
-            text-align: center;
-
-        }
-
-        .contenedorDes {
-            font-size: 2rem;
-            font-size: 1.5rem;
-            margin-top: 5rem;
-            margin-left: 1rem;
-        }
-
-        .otrosAutos {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            font-size: 2.5rem;
-            margin-top: 12rem;
-            align-items: center;
-            justify-content: center;
-            gap: 2rem;
-
-            .otroAuto1 {
-                width: 52vw;
-                text-decoration: none;
-                color: black;
-                text-align: center;
-            }
-
-            .otroAuto2 {
-                width: 50vw;
-                text-decoration: none;
-                color: black;
-                text-align: center;
-            }
-
-            .otroAuto3 {
-                width: 55vw;
-                text-decoration: none;
-                color: black;
-                text-align: center;
-
-            }
-
-        }
-        .tituloOtrosAutos {
-            font-size: 3rem;
-            text-align: center;
-            margin-top: 20%;
-        }
-    }
-}
-@media (min-width: 1024px){
-    html.paginaSec {
-        .dataCompra{
-            margin-top: 10rem;
-            display: flex;
-            flex-direction: row;
-            background-color: $sec-color;
-            justify-content:left;
-            align-items: center;
-            .auto{
-                width: 40%;
-                margin-left: 2rem;
-                background-color: $sec-color;
-            }
-            .letrasAuto{
-                
-                margin-left: 15%;
-                margin-top: 5%;
-                .nombreAuto{
-                    font-size: 3rem;
-                }        
-                .precioAuto{
-                    font-size: 2rem;
-                    margin-top: 1rem;
-                }
-            }
-            .btn{
+        .sectionRec {
+            .productosRecomendados {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
                 width: 100%;
-                font-size: 2rem;
-            }
-        }
-        .espacioDesc {
-            font-size: 2rem;
-            margin-top: 15rem;
-        }
-        .contenedorDes {
-            font-size: 1.5rem;
-            margin-top: 5rem;
-        }
-        .consumo{
-            .txtDescripcion{
-                margin-left: 2rem;
-            }
-        }
-        .tituloOtrosAutos{
-            text-align: center;
-            font-size: 2.5rem;
-            margin-top: 30rem;
-        }
-        .otrosAutos {
-            gap: 2rem;
-            margin-top: 0rem;
-            display: flex;
-            background-color: $sec-color;
-            align-items: baseline;
-            flex-direction: row;
-            font-size: 2rem;
-            .otroAuto1{
-                width: 80%;
-            }
-            .otroAuto2{
-                width: 75%;
-                
-            }
-            .otroAuto3{
-                width: 80%;
-                p{
-                  text-decoration: none;
+                flex-wrap: wrap;
+                margin: 0 auto;
+
+                .vento {
+                    display: block;
+                    padding: 2rem;
+                    border: solid;
+                    border-color: gray;
+                    border-radius: 2%;
+                    background-color: $primary-color;
+                    box-shadow: none;
+                    height: 22rem;
+                    width: 32rem;
+                    border-width: 1px;
+                    text-decoration: none;
+
+                    img {
+                        margin-top: 3rem;
+                        max-width: 27rem;
+                        max-height: 27rem;
+
+                    }
+
+                    p {
+                        margin-top: 1.5rem;
+                        color: #060606;
+                    }
+                }
+
+                .golfgti {
+                    padding: 2rem;
+                    border: solid;
+                    border-color: $box-color;
+                    border-width: 1px;
+                    border-radius: 2%;
+                    background-color: $primary-color;
+                    box-shadow: none;
+                    height: 22rem;
+                    width: 32rem;
+                    text-decoration: none;
+
+                    p {
+
+                        color: #060606;
+                        text-align: center;
+                    }
+
+                    .golfgtii {
+                        margin-top: 0rem;
+                        max-width: auto;
+                        height: 17rem;
+                        margin-left: -1rem;
+
+                    }
+                }
+
+                .amarok {
+                    display: flexbox;
+                    padding: 2rem;
+                    border: solid;
+                    border-width: 1px;
+                    border-color: $box-color;
+                    border-radius: 2%;
+                    background-color: $primary-color;
+                    box-shadow: none;
+                    height: 22rem;
+                    align-items: center;
+                    justify-content: center;
+                    width: 32rem;
+                    text-decoration: none;
+
+                    img {
+                        margin-top: 2rem;
+                        max-width: 35rem;
+                        max-height: 35rem;
+                        margin-left: -4rem;
+                    }
+
+                    p {
+                        margin-top: 0.75rem;
+                        color: #060606;
+                    }
+
                 }
             }
-            
+
+            h2 {
+                text-align: center;
+                margin-top: 10%;
+                margin-bottom: 2%;
+            }
         }
+
+        .sectionGrid {
+            .titulo {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+                font-size: clamp(18px, 5vw, 1.75rem);
+                margin-top: 10%;
+            }
+
+            .gridComparacion {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 100%;
+                max-height: fit-content;
+                gap: 5px;
+                justify-content: left;
+            }
+
+            .items {
+                border: 0.5px solid #ccc;
+                background-color: $primary-color;
+                justify-content: left;
+            }
+
+            .imgGrid {
+                max-width: 4%;
+                margin: 0.25rem;
+                justify-content: left;
+                align-items: center;
+            }
+        }
+        
     }
 }
