@@ -271,19 +271,25 @@
 
             .sectionRec {
                 .productosRecomendados {
+                    width: 100%;
                     .amarok {
                         width: 70vw;
+                        height: fit-content;
                         img {
                             margin-top: 0;
-                            width: 80vw;
+                            width: 110%;
                             height: auto;
+                            margin-left: -2rem;
                         }
                     }
                     .golfgti {
                         width: 70vw;
+                        height: fit-content;
                         img {
-                            width: 60vw;
+                            width: 80%;
                             height: auto;
+                            margin-top: 0;
+                            margin-left: 2rem;
                         }
                         p{
                             text-align: left;
@@ -292,8 +298,10 @@
 
                     .vento {
                         width: 70vw;
+                        height: fit-content;
                         img {
-                            width: 60vw;
+                            
+                            width: 90%;
                             height: auto;
                             margin-top: 0;
                         }
@@ -419,27 +427,51 @@
 
     body {
         main {
+            .sectionNovedades{
+                .productosDestacados:hover{
+                    
+                    transform: scale(1.1);
+                    transition: 0.7s;
+                }
+            }
             .sectionRec {
                 .productosRecomendados {
+                    
                     .golfgti {
+                    
+                        
                         img {
-                            width: 25vw;
-                            height: fit-content;
+                            width: 100%;
+                            margin-top: 0;
+                            height:max-content;
                         }
+                    }
+                    .golfgti:hover{
+                        transform: scale(1.1);
+                        transition: 0.7s;
                     }
 
                     .vento {
                         img {
-                            width: 25vw;
+                            width: 100%;
                             height: fit-content;
                         }
+                    }
+                    .vento:hover{
+                        transform: scale(1.1);
+                        transition: 0.7s;
                     }
 
                     .amarok {
                         img {
-                            width: 30vw;
+                            margin: 0;
+                            width: 120%;
                             height: fit-content;
                         }
+                    }
+                    .amarok:hover{
+                        transform: scale(1.1);
+                        transition: 0.7s;
                     }
                 }
             }

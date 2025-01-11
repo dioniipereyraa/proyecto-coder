@@ -3,7 +3,7 @@ $primary-color: rgb(221, 220, 220);
 body {
     
     header {
-        background-color: $primary-color;
+        background-color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -13,7 +13,7 @@ body {
         .navbar {
             padding: 1rem;
             width: 100vw;
-            background-color: $primary-color;
+            background-color: black;
             a {
                 color: black;
             }
