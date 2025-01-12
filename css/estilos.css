@@ -81,8 +81,8 @@ body main .sectionNovedades .novedades {
   font-size: 3rem;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: capitalize;
-  text-shadow: #060606;
-  color: #2a2929;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+  color: aqua;
   text-decoration: none;
   text-align: center;
   margin-bottom: 1rem;
@@ -136,12 +136,25 @@ body main .sectionRec .productosRecomendados .vento {
   text-decoration: none;
 }
 body main .sectionRec .productosRecomendados .vento img {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   height: 27rem;
 }
-body main .sectionRec .productosRecomendados .vento p {
-  margin-top: 1.5rem;
+body main .sectionRec .productosRecomendados .vento .car {
+  margin-top: 0.25rem;
   color: #060606;
+  text-decoration: none;
+  font-weight: 600;
+}
+body main .sectionRec .productosRecomendados .vento .desc {
+  color: rgb(119, 255, 255);
+  margin-top: 1%;
+  padding: 3px;
+  background-color: rgb(65, 65, 65);
+  border-radius: 5px;
+  border-width: 10px;
+  border: #060606;
+  width: fit-content;
+  font-weight: 600;
 }
 body main .sectionRec .productosRecomendados .golfgti {
   display: block;
@@ -156,13 +169,29 @@ body main .sectionRec .productosRecomendados .golfgti {
   border-width: 1px;
   text-decoration: none;
 }
+body main .sectionRec .productosRecomendados .golfgti a {
+  text-decoration: none;
+}
 body main .sectionRec .productosRecomendados .golfgti img {
   margin-top: 3rem;
   height: 27rem;
 }
-body main .sectionRec .productosRecomendados .golfgti p {
-  margin-top: 1.5rem;
+body main .sectionRec .productosRecomendados .golfgti .car {
+  margin-top: 0.25rem;
   color: #060606;
+  text-decoration: none;
+  font-weight: 600;
+}
+body main .sectionRec .productosRecomendados .golfgti .desc {
+  color: rgb(119, 255, 255);
+  margin-top: 1%;
+  padding: 3px;
+  background-color: rgb(65, 65, 65);
+  border-radius: 5px;
+  border-width: 10px;
+  border: #060606;
+  width: fit-content;
+  font-weight: 600;
 }
 body main .sectionRec .productosRecomendados .amarok {
   display: block;
@@ -181,10 +210,39 @@ body main .sectionRec .productosRecomendados .amarok img {
   margin-top: 3rem;
   width: 120%;
   height: auto;
+  justify-content: left;
 }
-body main .sectionRec .productosRecomendados .amarok p {
-  margin-top: 1.5rem;
+body main .sectionRec .productosRecomendados .amarok .car {
+  margin-top: 0rem;
   color: #060606;
+  text-decoration: none;
+  font-weight: 600;
+}
+body main .sectionRec .productosRecomendados .amarok .desc {
+  color: rgb(119, 255, 255);
+  margin-top: 2rem;
+  padding: 3px;
+  background-color: rgb(65, 65, 65);
+  border-radius: 5px;
+  border-width: 10px;
+  border: #060606;
+  width: fit-content;
+  font-weight: 600;
+}
+body main .sectionRec .productosRecomendados .vento:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+  background-color: #bebebe;
+}
+body main .sectionRec .productosRecomendados .golfgti:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+  background-color: #bebebe;
+}
+body main .sectionRec .productosRecomendados .amarok:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+  background-color: #bebebe;
 }
 body main .sectionRec h2 {
   text-align: center;
@@ -667,26 +725,14 @@ body main .otrosAutos .otroAuto3 {
     margin-top: 0;
     height: max-content;
   }
-  body main .sectionRec .productosRecomendados .golfgti:hover {
-    transform: scale(1.1);
-    transition: 0.7s;
-  }
   body main .sectionRec .productosRecomendados .vento img {
     width: 100%;
     height: fit-content;
-  }
-  body main .sectionRec .productosRecomendados .vento:hover {
-    transform: scale(1.1);
-    transition: 0.7s;
   }
   body main .sectionRec .productosRecomendados .amarok img {
     margin: 0;
     width: 120%;
     height: fit-content;
-  }
-  body main .sectionRec .productosRecomendados .amarok:hover {
-    transform: scale(1.1);
-    transition: 0.7s;
   }
   /*MAIN*/
   .dataCompra {

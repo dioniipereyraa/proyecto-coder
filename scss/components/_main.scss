@@ -2,6 +2,7 @@ $primary-color: rgb(221, 220, 220);
 $sec-color: #f4f4f4;
 $box-color: grey;
 $theme: light;
+$car-box: #bebebe;
 
 
 body {
@@ -49,8 +50,8 @@ body {
                 font-size: 3rem;
                 font-family: Arial, Helvetica, sans-serif;
                 text-transform: capitalize;
-                text-shadow: #060606;
-                color: #2a2929;
+                text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+                color: aqua;
                 text-decoration: none;
                 text-align: center;
                 margin-bottom: 1rem;
@@ -108,20 +109,37 @@ body {
                     width: 32rem;
                     border-width: 1px;
                     text-decoration: none;
+                    
 
                     img {
-                        margin-top: 3rem;
+                        margin-top: 1.5rem;
                         height: 27rem;
                     }
 
-                    p {
-                        margin-top: 1.5rem;
+                    .car {
+                        margin-top: 0.25rem;
                         color: #060606;
+                        text-decoration: none;
+                        font-weight: 600;
+                    }
+                    .desc{
+                        color: rgb(119, 255, 255);
+                        margin-top: 1%;
+                        padding: 3px;
+                        background-color: rgb(65, 65, 65);
+                        border-radius: 5px;
+                        border-width: 10px;
+                        border: #060606;
+                        width: fit-content;
+                        font-weight: 600;
                     }
                 }
 
 
                 .golfgti {
+                    a{
+                        text-decoration: none;
+                    }
                     display: block;
                     padding: 2rem;
                     border: solid;
@@ -141,9 +159,22 @@ body {
 
                     }
 
-                    p {
-                        margin-top: 1.5rem;
+                    .car {
+                        margin-top: 0.25rem;
                         color: #060606;
+                        text-decoration: none;
+                        font-weight: 600;
+                    }
+                    .desc{
+                        color: rgb(119, 255, 255);
+                        margin-top: 1%;
+                        padding: 3px;
+                        background-color: rgb(65, 65, 65);
+                        border-radius: 5px;
+                        border-width: 10px;
+                        border: #060606;
+                        width: fit-content;
+                        font-weight: 600;
                     }
                 }
 
@@ -164,13 +195,41 @@ body {
                         margin-top: 3rem;
                         width: 120%;
                         height: auto;
-
+                        justify-content: left;
                     }
 
-                    p {
-                        margin-top: 1.5rem;
+                    .car {
+                        margin-top: 0rem;
                         color: #060606;
+                        text-decoration: none;
+                        font-weight: 600;
                     }
+                    .desc{
+                        color: rgb(119, 255, 255);
+                        margin-top: 2rem;
+                        padding: 3px;
+                        background-color: rgb(65, 65, 65);
+                        border-radius: 5px;
+                        border-width: 10px;
+                        border: #060606;
+                        width: fit-content;
+                        font-weight: 600;
+                    }
+                }
+                .vento:hover{
+                    transform: scale(1.1);
+                    transition: 0.7s;
+                    background-color: $car-box;
+                }
+                .golfgti:hover{
+                    transform: scale(1.1);
+                    transition: 0.7s;
+                    background-color: $car-box;
+                }
+                .amarok:hover{
+                    transform: scale(1.1);
+                    transition: 0.7s;
+                    background-color: $car-box;
                 }
             }
 
