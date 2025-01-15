@@ -4,7 +4,7 @@ $sec-color: #f4f4f4;
 
 body {
     width: 100vw;
-
+    height: 100vh;
     main {
         .contenedorTotal {
             .dataCompra {
@@ -104,7 +104,7 @@ body {
             gap: 3rem;
             justify-content: center;
             align-items: center;
-            font-size: 3.5vh;
+            font-size: 3vh;
             font-weight: 600;
             margin-top: 3rem;
             background-color: $sec-color;
@@ -129,6 +129,21 @@ body {
                 color: black;
                 text-align: center;
 
+            }
+            .otroAuto1:hover{
+                transform: scale(1.1);
+                transition: 0.7s;
+                
+            }
+            .otroAuto2:hover{
+                transform: scale(1.1);
+                transition: 0.7s;
+                
+            }
+            .otroAuto3:hover{
+                transform: scale(1.1);
+                transition: 0.7s;
+                
             }
 
         }

@@ -1,11 +1,11 @@
 @media (max-width: 599px) {
     body {
-        width: 100vw;
+        width: auto;
         height: 100vh;
 
         header {
             .navBar {
-                width: 100vw;
+                width:100vw;
                 background-color: #f4f4f4;
 
                 .btn {
@@ -261,6 +261,8 @@
 
 @media (min-width: 600px) and (max-width: 1024px) {
     body {
+        width: 100vw;
+        height: auto;
         main {
             .contenedor {
                 .textoMain {
@@ -426,6 +428,8 @@
     }
 
     body {
+        width: 100vw;
+        height: auto;
         main {
             .sectionNovedades{
                 .productosDestacados:hover{
@@ -583,16 +587,16 @@
         margin-top: 5%;
         align-items: center;
         justify-content: center;
-
+        width: 100vw;
         h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
-
+    
         div {
             display: inline-block;
             margin: 0.5rem;
-
+            
             img {
                 width: 40px;
                 height: 40px;

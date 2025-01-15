@@ -50,10 +50,10 @@ body {
                 font-size: 3rem;
                 font-family: Arial, Helvetica, sans-serif;
                 text-transform: capitalize;
-                text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
-                color: aqua;
+                text-shadow: 3px 3px 8px $primary-color;
+                color: rgb(0, 0, 0);
                 text-decoration: none;
-                text-align: center;
+                text-align: center;     
                 margin-bottom: 1rem;
                 margin-top: 3rem;
                 font-weight: 700;
@@ -64,10 +64,12 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 1rem;
+                width: 100%;
                 justify-content: center;
                 text-decoration: none;
                 align-items: center;
                 margin-bottom: 0;
+                
 
                 img {
                     max-width: 100%;
@@ -191,8 +193,8 @@ body {
                     border-width: 1px;
                     text-decoration: none;
 
-                    img {
-                        margin-top: 3rem;
+                    .imgv6 {
+                        margin-top: 0.5rem;
                         width: 120%;
                         height: auto;
                         justify-content: left;
@@ -241,7 +243,9 @@ body {
         }
 
         .sectionGrid {
-            width: 100vw;
+            width: 85vw;
+            margin-left: 7.5%;
+            
 
             .titulo {
                 font-family: Arial, Helvetica, sans-serif;
@@ -254,9 +258,9 @@ body {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 max-width: 100%;
-                max-height: fit-content;
                 gap: 5px;
-                justify-content: left;
+                max-height: fit-content;
+                
             }
 
             .items {
