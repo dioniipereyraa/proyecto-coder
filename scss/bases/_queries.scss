@@ -2,7 +2,7 @@
     body {
         width: auto;
         height: 100vh;
-
+        
         header {
             .navBar {
                 width:100vw;
@@ -394,6 +394,7 @@
     footer {
         text-align: center;
         margin-top: 15rem;
+        justify-content: center;
         background-color: #f4f4f4;
         display: inline-block;
         width: 100vw;

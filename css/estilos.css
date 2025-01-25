@@ -44,7 +44,7 @@ body header .navbar a {
   color: black;
 }
 body header .dropdown-menu {
-  animation: growOut 300ms ease-in-out forwards;
+  animation: growOut 0.5s ease-in-out forwards;
   transform-origin: top center;
 }
 @keyframes growOut {
@@ -726,6 +726,7 @@ body main .otrosAutos .otroAuto3:hover {
   footer {
     text-align: center;
     margin-top: 15rem;
+    justify-content: center;
     background-color: #f4f4f4;
     display: inline-block;
     width: 100vw;

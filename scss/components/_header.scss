@@ -24,7 +24,7 @@ body {
 
         
         .dropdown-menu {
-            animation: growOut 300ms ease-in-out forwards; 
+            animation: growOut 0.5s ease-in-out forwards; 
             transform-origin: top center;
             
             @keyframes growOut {
