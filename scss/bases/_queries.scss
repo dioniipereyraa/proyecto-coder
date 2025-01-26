@@ -1,3 +1,5 @@
+@import '../bases/operaciones';
+
 @media (max-width: 599px) {
     body {
         width: auto;
@@ -6,7 +8,7 @@
         header {
             .navBar {
                 width: 100vw;
-                background-color: #f4f4f4;
+                background-color: $sec-color;
 
                 .btn {
                     font-size: 2rem;
@@ -68,7 +70,7 @@
                         margin-left: 0;
                         gap: 1rem;
                         position: relative;
-                        color: black;
+                        color: $font-color;
                         font-size: xx-large;
 
                         .nombreAuto {
@@ -76,7 +78,7 @@
                             font-size: 2rem;
                         }
 
-                        
+
 
                         .precioAuto {
                             font-size: 1.5rem;
@@ -89,7 +91,7 @@
                 .espacioDesc {
                     display: block;
                     width: 100vw;
-                    background-color: #f4f4f4;
+                    background-color: $sec-color;
                     text-align: center;
                     margin-top: 4rem;
                     margin-bottom: 2rem;
@@ -111,7 +113,7 @@
 
             .sectionRec {
                 h2 {
-                    color: black;
+                    color: $font-color;
                 }
 
                 .productosRecomendados {
@@ -192,7 +194,7 @@
                 .otroAuto1 {
                     width: 90vw;
                     text-decoration: none;
-                    color: black;
+                    color: $font-color;
                     text-align: center;
 
                 }
@@ -200,7 +202,7 @@
                 .otroAuto2 {
                     width: 80vw;
                     text-decoration: none;
-                    color: black;
+                    color: $font-color;
                     text-align: center;
                     margin: 0;
                 }
@@ -208,7 +210,7 @@
                 .otroAuto3 {
                     width: 100vw;
                     text-decoration: none;
-                    color: black;
+                    color: $font-color;
                     text-align: center;
 
                 }
@@ -225,7 +227,7 @@
             flex-direction: row;
             justify-content: center;
             padding: 1rem;
-            background-color: #f4f4f4;
+            background-color: $sec-color;
             margin-top: 2rem;
             width: 100vw;
 
@@ -245,20 +247,69 @@
     /*-------FIN DESCRIPCION-----*/
 
     body {
-        
+
         main {
+            .amarokv6 {
+
+                /* PAGINA AMAROK V6 */
+                .contenedorTotal {
+                    .dataCompra {
+                        .btn {
+                            margin-top: 7%;
+                            width: 50%;
+                            margin-left: 25%;
+                            margin-bottom: 5%;
+                        }
+
+                        .letrasAuto {
+                            margin-left: 5%;
+                            gap: 0;
+
+                            .nombreAuto {
+                                text-align: left;
+                            }
+
+                            .dataB {
+                                text-align: left;
+                                color: $txtSec-Color;
+                            }
+
+                            .precioAuto {
+                                text-align: left;
+                                margin-top: 0;
+                            }
+
+                        }
+                    }
+                }
+
+                .contenedorVideo {
+                    .video {
+                        width: 90%;
+                        margin-left: 5%;
+                        margin-top: 10%;
+                    }
+                }
+
+            }
+
+            /*FIN PAG amarok v6-------*/
+
             .golfR {
-                .boton{
-                    .btn{
+
+                /* PAGINA GOLF R */
+                .boton {
+                    .btn {
                         width: 50vw;
                         justify-content: center;
                         margin-left: 25%;
                         margin-top: 2%;
                     }
-                    
+
                 }
+
                 .contenedorTotal {
-                    .descImagenes{
+                    .descImagenes {
                         display: grid;
                         gap: 1.5rem;
                         border-radius: 5%;
@@ -268,65 +319,76 @@
                         margin-bottom: 15%;
                         text-align: center;
 
-                        .motor{
-                            .txtSec{
-                                color: rgb(114, 114, 114);
+                        .motor {
+                            .txtSec {
+                                color: $txtSec-Color;
                                 font-weight: 600;
                                 margin: 5%;
-                                
+
                             }
-                            .imeg{
+
+                            .imeg {
                                 width: 50%;
                                 height: auto;
                             }
                         }
-                        .potencia{
-                            .txtSec{
-                                color: rgb(114, 114, 114);
+
+                        .potencia {
+                            .txtSec {
+                                color: $txtSec-Color;
                                 font-weight: 600;
                                 margin: 5%;
                             }
-                            .imeg{
+
+                            .imeg {
                                 width: 50%;
                                 height: auto;
                             }
                         }
-                        .traccion{
-                            .txtSec{
-                                color: rgb(114, 114, 114);
+
+                        .traccion {
+                            .txtSec {
+                                color: $txtSec-Color;
                                 font-weight: 600;
                                 margin: 5%;
                             }
-                            .imeg{
+
+                            .imeg {
                                 width: 50%;
                                 height: auto;
                                 margin: 5%;
                             }
                         }
-                        .combustible{
-                            .txtSec{
-                                color: rgb(114, 114, 114);
+
+                        .combustible {
+                            .txtSec {
+                                color: $txtSec-Color;
                                 font-weight: 600;
                                 margin: 5%;
                             }
-                            .imeg{
+
+                            .imeg {
                                 width: 40%;
                                 height: auto;
                             }
                         }
                     }
+
                     .letrasAuto {
                         margin: 0;
                         margin-left: 5%;
                         text-align: left;
-                        .nombreAuto{
+
+                        .nombreAuto {
                             text-align: left;
                         }
-                        .precioAuto{
+
+                        .precioAuto {
                             text-align: left;
                         }
+
                         .datosA {
-                            color: rgb(133, 133, 133);
+                            color: $txtSec-Color;
                             text-align: left;
                             margin: 0;
                             text-shadow: black solid 1px;
@@ -339,7 +401,7 @@
     }
 
 
-    /*navbar-------*/
+    /*FIN PAG GOLF R-------*/
 
 }
 
@@ -461,7 +523,7 @@
                 .otroAuto1 {
                     width: 50vw;
                     text-decoration: none;
-                    color: black;
+                    color: $font-color;
                     text-align: center;
 
                 }
@@ -469,7 +531,7 @@
                 .otroAuto2 {
                     width: 50vw;
                     text-decoration: none;
-                    color: black;
+                    color: $font-color;
                     text-align: center;
                     margin: 0;
                 }
@@ -477,7 +539,7 @@
                 .otroAuto3 {
                     width: 60vw;
                     text-decoration: none;
-                    color: black;
+                    color: $font-color;
                     text-align: center;
 
                 }
@@ -490,7 +552,7 @@
         text-align: center;
         margin-top: 15rem;
         justify-content: center;
-        background-color: #f4f4f4;
+        background-color: $sec-color;
         display: inline-block;
         width: 100vw;
         padding: 1rem;
@@ -511,6 +573,179 @@
         }
 
     }
+
+
+    /*----- PAGINA GOLF R------*/
+    body {
+
+        main {
+            .amarokv6 { 
+
+                /* PAGINA AMAROK V6 */
+                .contenedorTotal {
+                    .dataCompra {
+                        display: block;
+                        .auto{
+                            width: 80%;
+                            margin-left: 10%;
+                        }
+                        .btn {
+                            position: absolute;
+                            margin-top: 7%;
+                            width: 30%;
+                            right: 19%;
+                            top: 21%;
+                        }
+
+                        .letrasAuto {
+                            margin-left: 5%;
+                            gap: 0;
+                            margin-top: 10%;
+                            padding-top: 10%;
+                            .nombreAuto {
+                                text-align: left;
+                            }
+
+                            .dataB {
+                                text-align: left;
+                                color: $txtSec-Color;
+                            }
+
+                            .precioAuto {
+                                text-align: left;
+                                margin-top: 0;
+                            }
+
+                        }
+                    }
+                }
+
+                .contenedorVideo {
+                    .video {
+                        width: 90%;
+                        margin-left: 5%;
+                        margin-top: 10%;
+                    }
+                }
+
+            }
+            .golfR {
+                .boton {
+                    .btn {
+                        width: 50vw;
+                        justify-content: center;
+                        margin-left: 25%;
+                        margin-top: 2%;
+                    }
+
+                }
+
+                .contenedorTotal {
+                    .descImagenes {
+                        display: grid;
+                        gap: 1.5rem;
+                        border-radius: 5%;
+                        grid-template-columns: 25% 25%;
+                        justify-content: center;
+                        margin-top: 15%;
+                        margin-bottom: 15%;
+                        text-align: center;
+
+                        .motor {
+                            p {
+                                font-size: 1.75rem;
+                            }
+
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 700;
+                                margin: 5%;
+
+                            }
+
+                            .imeg {
+                                width: 50%;
+                                height: auto;
+                            }
+                        }
+
+                        .potencia {
+                            p {
+                                font-size: 1.75rem;
+                            }
+
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 700;
+                                margin: 5%;
+                            }
+
+                            .imeg {
+                                width: 50%;
+                                height: auto;
+                            }
+                        }
+
+                        .traccion {
+                            p {
+                                font-size: 1.75rem;
+                            }
+
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 700;
+                                margin: 5%;
+                            }
+
+                            .imeg {
+                                width: 50%;
+                                height: auto;
+                                margin: 5%;
+                            }
+                        }
+
+                        .combustible {
+                            font-size: 1.75rem;
+
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 700;
+                                margin: 5%;
+                            }
+
+                            .imeg {
+                                width: 45%;
+                                height: auto;
+                            }
+                        }
+                    }
+
+                    .letrasAuto {
+                        margin: 0;
+                        margin-left: 5%;
+                        text-align: left;
+
+                        .nombreAuto {
+                            text-align: left;
+                        }
+
+                        .precioAuto {
+                            text-align: left;
+                        }
+
+                        .datosA {
+                            color: $txtSec-Color;
+                            text-align: left;
+                            margin: 0;
+                            text-shadow: black solid 1px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
 }
 
 @media (min-width: 1024px) {
@@ -576,7 +811,7 @@
         margin-top: 7rem;
         display: flex;
         flex-direction: row;
-        background-color: #f4f4f4;
+        background-color: $sec-color;
         justify-content: left;
         align-items: center;
         margin-bottom: 15%;
@@ -584,7 +819,7 @@
         .auto {
             width: 40vw;
             margin-left: 2rem;
-            background-color: #f4f4f4;
+            background-color: $sec-color;
         }
 
         .letrasAuto {
@@ -651,7 +886,7 @@
         gap: 2rem;
         margin-top: 0rem;
         display: flex;
-        background-color: #f4f4f4;
+        background-color: $sec-color;
         align-items: baseline;
         flex-direction: row;
         font-size: 2rem;
@@ -703,4 +938,177 @@
         }
     }
 
+    /*-----PAGINA GOLF R-------*/
+    body {
+
+        main {
+            .amarokv6 {
+
+                /* PAGINA AMAROK V6 */
+                .contenedorTotal {
+                    .dataCompra {
+                        display: block;
+                        .btn {
+                            margin-top: 0;
+                            width: 30%;
+                            margin-left: 5%;
+                            margin-bottom: 5%;
+                        }
+                        .auto{
+                            margin-left: 10%;
+                            margin-top: -5%;
+                        }
+                        .letrasAuto {
+                            margin-left: 5%;
+                            gap: 0;
+                            margin-bottom: 0;
+                            
+
+                            .nombreAuto {
+                                text-align: left;
+                                margin-top: 5%;
+                            }
+
+                            .dataB {
+                                text-align: left;
+                                color: $txtSec-Color;
+                            }
+
+                            .precioAuto {
+                                text-align: left;
+                                margin-top: 0;
+                                margin-bottom: 0%;
+                            }
+
+                        }
+                    }
+                }
+
+                .contenedorVideo {
+                    .video {
+                        width: 60%;
+                        margin-left: 20%;
+                        margin-top: 10%;
+                    }
+                }
+
+            }
+            .golfR {
+                .boton {
+                    .btn {
+                        width: 25vw;
+                        justify-content: center;
+                        text-align: center;
+                        margin-left: 37.5%;
+                        margin-top: 2%;
+                    }
+
+                }
+
+                .contenedorTotal {
+                    .descImagenes {
+                        display: grid;
+                        gap: 1.5rem;
+                        border-radius: 5%;
+                        grid-template-columns: 25% 25%;
+                        justify-content: center;
+                        margin: 5%;
+                        text-align: center;
+
+
+
+                        .motor {
+                            p {
+                                font-size: 1.75rem;
+                            }
+
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 700;
+                                margin: 5%;
+
+                            }
+
+                            .imeg {
+                                width: 10%;
+                                height: auto;
+                            }
+                        }
+
+                        .potencia {
+                            p {
+                                font-size: 1.75rem;
+                            }
+
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 700;
+                                margin: 5%;
+                            }
+
+                            .imeg {
+                                width: 10%;
+                                height: auto;
+                            }
+                        }
+
+                        .traccion {
+                            p {
+                                font-size: 1.75rem;
+                            }
+
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 700;
+                                margin: 5%;
+                            }
+
+                            .imeg {
+                                width: 10%;
+                                height: auto;
+                                margin: 5%;
+                            }
+                        }
+
+                        .combustible {
+                            font-size: 1.75rem;
+
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 700;
+                                margin: 5%;
+                            }
+
+                            .imeg {
+                                width: 15%;
+                                height: auto;
+                            }
+                        }
+                    }
+
+                    .letrasAuto {
+                        margin: 0;
+                        margin-left: 5%;
+                        text-align: left;
+
+                        .nombreAuto {
+                            text-align: left;
+                        }
+
+                        .precioAuto {
+                            text-align: left;
+                        }
+
+                        .datosA {
+                            color: $txtSec-Color;
+                            text-align: left;
+                            margin: 0;
+                            text-shadow: black solid 1px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
 }

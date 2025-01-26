@@ -602,6 +602,41 @@ body main .otrosAutos .otroAuto3:hover {
     height: 40px;
   }
   /*-------FIN DESCRIPCION-----*/
+  body main {
+    /*FIN PAG amarok v6-------*/
+  }
+  body main .amarokv6 {
+    /* PAGINA AMAROK V6 */
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .btn {
+    margin-top: 7%;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 5%;
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .letrasAuto {
+    margin-left: 5%;
+    gap: 0;
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .letrasAuto .nombreAuto {
+    text-align: left;
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .letrasAuto .dataB {
+    text-align: left;
+    color: rgb(114, 114, 114);
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .letrasAuto .precioAuto {
+    text-align: left;
+    margin-top: 0;
+  }
+  body main .amarokv6 .contenedorVideo .video {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+  body main .golfR {
+    /* PAGINA GOLF R */
+  }
   body main .golfR .boton .btn {
     width: 50vw;
     justify-content: center;
@@ -667,12 +702,12 @@ body main .otrosAutos .otroAuto3:hover {
     text-align: left;
   }
   body main .golfR .contenedorTotal .letrasAuto .datosA {
-    color: rgb(133, 133, 133);
+    color: rgb(114, 114, 114);
     text-align: left;
     margin: 0;
     text-shadow: black solid 1px;
   }
-  /*navbar-------*/
+  /*FIN PAG GOLF R-------*/
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   body {
@@ -800,6 +835,128 @@ body main .otrosAutos .otroAuto3:hover {
     width: 6vw;
     height: 6vw;
     margin: 1rem;
+  }
+  /*----- PAGINA GOLF R------*/
+  body main .amarokv6 {
+    /* PAGINA AMAROK V6 */
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra {
+    display: block;
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .auto {
+    width: 80%;
+    margin-left: 10%;
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .btn {
+    position: absolute;
+    margin-top: 7%;
+    width: 30%;
+    right: 19%;
+    top: 21%;
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .letrasAuto {
+    margin-left: 5%;
+    gap: 0;
+    margin-top: 10%;
+    padding-top: 10%;
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .letrasAuto .nombreAuto {
+    text-align: left;
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .letrasAuto .dataB {
+    text-align: left;
+    color: rgb(114, 114, 114);
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .letrasAuto .precioAuto {
+    text-align: left;
+    margin-top: 0;
+  }
+  body main .amarokv6 .contenedorVideo .video {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+  body main .golfR .boton .btn {
+    width: 50vw;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 2%;
+  }
+  body main .golfR .contenedorTotal .descImagenes {
+    display: grid;
+    gap: 1.5rem;
+    border-radius: 5%;
+    grid-template-columns: 25% 25%;
+    justify-content: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    text-align: center;
+  }
+  body main .golfR .contenedorTotal .descImagenes .motor p {
+    font-size: 1.75rem;
+  }
+  body main .golfR .contenedorTotal .descImagenes .motor .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 700;
+    margin: 5%;
+  }
+  body main .golfR .contenedorTotal .descImagenes .motor .imeg {
+    width: 50%;
+    height: auto;
+  }
+  body main .golfR .contenedorTotal .descImagenes .potencia p {
+    font-size: 1.75rem;
+  }
+  body main .golfR .contenedorTotal .descImagenes .potencia .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 700;
+    margin: 5%;
+  }
+  body main .golfR .contenedorTotal .descImagenes .potencia .imeg {
+    width: 50%;
+    height: auto;
+  }
+  body main .golfR .contenedorTotal .descImagenes .traccion p {
+    font-size: 1.75rem;
+  }
+  body main .golfR .contenedorTotal .descImagenes .traccion .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 700;
+    margin: 5%;
+  }
+  body main .golfR .contenedorTotal .descImagenes .traccion .imeg {
+    width: 50%;
+    height: auto;
+    margin: 5%;
+  }
+  body main .golfR .contenedorTotal .descImagenes .combustible {
+    font-size: 1.75rem;
+  }
+  body main .golfR .contenedorTotal .descImagenes .combustible .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 700;
+    margin: 5%;
+  }
+  body main .golfR .contenedorTotal .descImagenes .combustible .imeg {
+    width: 45%;
+    height: auto;
+  }
+  body main .golfR .contenedorTotal .letrasAuto {
+    margin: 0;
+    margin-left: 5%;
+    text-align: left;
+  }
+  body main .golfR .contenedorTotal .letrasAuto .nombreAuto {
+    text-align: left;
+  }
+  body main .golfR .contenedorTotal .letrasAuto .precioAuto {
+    text-align: left;
+  }
+  body main .golfR .contenedorTotal .letrasAuto .datosA {
+    color: rgb(114, 114, 114);
+    text-align: left;
+    margin: 0;
+    text-shadow: black solid 1px;
   }
 }
 @media (min-width: 1024px) {
@@ -934,6 +1091,128 @@ body main .otrosAutos .otroAuto3:hover {
   footer div img {
     width: 40px;
     height: 40px;
+  }
+  /*-----PAGINA GOLF R-------*/
+  body main .amarokv6 {
+    /* PAGINA AMAROK V6 */
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra {
+    display: block;
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .btn {
+    margin-top: 0;
+    width: 30%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .auto {
+    margin-left: 10%;
+    margin-top: -5%;
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .letrasAuto {
+    margin-left: 5%;
+    gap: 0;
+    margin-bottom: 0;
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .letrasAuto .nombreAuto {
+    text-align: left;
+    margin-top: 5%;
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .letrasAuto .dataB {
+    text-align: left;
+    color: rgb(114, 114, 114);
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .letrasAuto .precioAuto {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0%;
+  }
+  body main .amarokv6 .contenedorVideo .video {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+  body main .golfR .boton .btn {
+    width: 25vw;
+    justify-content: center;
+    text-align: center;
+    margin-left: 37.5%;
+    margin-top: 2%;
+  }
+  body main .golfR .contenedorTotal .descImagenes {
+    display: grid;
+    gap: 1.5rem;
+    border-radius: 5%;
+    grid-template-columns: 25% 25%;
+    justify-content: center;
+    margin: 5%;
+    text-align: center;
+  }
+  body main .golfR .contenedorTotal .descImagenes .motor p {
+    font-size: 1.75rem;
+  }
+  body main .golfR .contenedorTotal .descImagenes .motor .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 700;
+    margin: 5%;
+  }
+  body main .golfR .contenedorTotal .descImagenes .motor .imeg {
+    width: 10%;
+    height: auto;
+  }
+  body main .golfR .contenedorTotal .descImagenes .potencia p {
+    font-size: 1.75rem;
+  }
+  body main .golfR .contenedorTotal .descImagenes .potencia .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 700;
+    margin: 5%;
+  }
+  body main .golfR .contenedorTotal .descImagenes .potencia .imeg {
+    width: 10%;
+    height: auto;
+  }
+  body main .golfR .contenedorTotal .descImagenes .traccion p {
+    font-size: 1.75rem;
+  }
+  body main .golfR .contenedorTotal .descImagenes .traccion .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 700;
+    margin: 5%;
+  }
+  body main .golfR .contenedorTotal .descImagenes .traccion .imeg {
+    width: 10%;
+    height: auto;
+    margin: 5%;
+  }
+  body main .golfR .contenedorTotal .descImagenes .combustible {
+    font-size: 1.75rem;
+  }
+  body main .golfR .contenedorTotal .descImagenes .combustible .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 700;
+    margin: 5%;
+  }
+  body main .golfR .contenedorTotal .descImagenes .combustible .imeg {
+    width: 15%;
+    height: auto;
+  }
+  body main .golfR .contenedorTotal .letrasAuto {
+    margin: 0;
+    margin-left: 5%;
+    text-align: left;
+  }
+  body main .golfR .contenedorTotal .letrasAuto .nombreAuto {
+    text-align: left;
+  }
+  body main .golfR .contenedorTotal .letrasAuto .precioAuto {
+    text-align: left;
+  }
+  body main .golfR .contenedorTotal .letrasAuto .datosA {
+    color: rgb(114, 114, 114);
+    text-align: left;
+    margin: 0;
+    text-shadow: black solid 1px;
   }
 }
 

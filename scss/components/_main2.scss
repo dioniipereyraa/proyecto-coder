@@ -1,7 +1,5 @@
 /*ACA VA A ESTAR EL SCSS DE LAS PAGINAS SECUNDARIAS (NO LA PRINCIPAL)*/
-$primary-color: rgb(221, 220, 220);
-$sec-color: #f4f4f4;
-
+@import '../bases/operaciones';
 body {
     width: 100vw;
     height: 100vh;
