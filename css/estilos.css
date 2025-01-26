@@ -303,7 +303,7 @@ body {
   height: 100vh;
 }
 body main .contenedorTotal .dataCompra {
-  margin-top: 10rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   background-color: #f4f4f4;
@@ -326,10 +326,6 @@ body main .contenedorTotal .dataCompra .letrasAuto .precioAuto {
   font-size: 2rem;
   margin-top: 1rem;
   text-align: center;
-}
-body main .contenedorTotal .dataCompra .btn {
-  width: 100%;
-  font-size: 2rem;
 }
 body main .contenedorTotal .espacioDesc {
   display: block;
@@ -368,7 +364,7 @@ body main .contenedorTotal .contenedorDes .parteFinal {
   margin-left: 0.5rem;
 }
 body main .tituloOtrosAutos {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   margin-top: 10rem;
   margin-bottom: 3%;
@@ -468,14 +464,14 @@ body main .otrosAutos .otroAuto3:hover {
   body main .contenedorTotal .dataCompra .auto {
     display: block;
     width: 90vw;
-    margin-top: 5rem;
+    margin-top: 1rem;
     height: auto;
     margin-left: 0;
   }
   body main .contenedorTotal .dataCompra .letrasAuto {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 0;
     gap: 1rem;
     position: relative;
@@ -485,15 +481,6 @@ body main .otrosAutos .otroAuto3:hover {
   body main .contenedorTotal .dataCompra .letrasAuto .nombreAuto {
     text-align: center;
     font-size: 2rem;
-  }
-  body main .contenedorTotal .dataCompra .letrasAuto .btn {
-    display: flex;
-    width: 50vw;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-left: 25vw;
-    font-size: 3vh;
   }
   body main .contenedorTotal .dataCompra .letrasAuto .precioAuto {
     font-size: 1.5rem;
@@ -568,7 +555,7 @@ body main .otrosAutos .otroAuto3:hover {
     flex-direction: column;
     gap: 3rem;
     align-items: center;
-    font-size: 3vh;
+    font-size: 2vh;
     font-weight: 600;
     margin-top: 3rem;
     margin: 0;
@@ -615,6 +602,76 @@ body main .otrosAutos .otroAuto3:hover {
     height: 40px;
   }
   /*-------FIN DESCRIPCION-----*/
+  body main .golfR .boton .btn {
+    width: 50vw;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 2%;
+  }
+  body main .golfR .contenedorTotal .descImagenes {
+    display: grid;
+    gap: 1.5rem;
+    border-radius: 5%;
+    grid-template-columns: 25% 25%;
+    justify-content: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    text-align: center;
+  }
+  body main .golfR .contenedorTotal .descImagenes .motor .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 600;
+    margin: 5%;
+  }
+  body main .golfR .contenedorTotal .descImagenes .motor .imeg {
+    width: 50%;
+    height: auto;
+  }
+  body main .golfR .contenedorTotal .descImagenes .potencia .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 600;
+    margin: 5%;
+  }
+  body main .golfR .contenedorTotal .descImagenes .potencia .imeg {
+    width: 50%;
+    height: auto;
+  }
+  body main .golfR .contenedorTotal .descImagenes .traccion .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 600;
+    margin: 5%;
+  }
+  body main .golfR .contenedorTotal .descImagenes .traccion .imeg {
+    width: 50%;
+    height: auto;
+    margin: 5%;
+  }
+  body main .golfR .contenedorTotal .descImagenes .combustible .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 600;
+    margin: 5%;
+  }
+  body main .golfR .contenedorTotal .descImagenes .combustible .imeg {
+    width: 40%;
+    height: auto;
+  }
+  body main .golfR .contenedorTotal .letrasAuto {
+    margin: 0;
+    margin-left: 5%;
+    text-align: left;
+  }
+  body main .golfR .contenedorTotal .letrasAuto .nombreAuto {
+    text-align: left;
+  }
+  body main .golfR .contenedorTotal .letrasAuto .precioAuto {
+    text-align: left;
+  }
+  body main .golfR .contenedorTotal .letrasAuto .datosA {
+    color: rgb(133, 133, 133);
+    text-align: left;
+    margin: 0;
+    text-shadow: black solid 1px;
+  }
   /*navbar-------*/
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -777,7 +834,7 @@ body main .otrosAutos .otroAuto3:hover {
   }
   /*MAIN*/
   .dataCompra {
-    margin-top: 10rem;
+    margin-top: 7rem;
     display: flex;
     flex-direction: row;
     background-color: #f4f4f4;

@@ -2,10 +2,10 @@
     body {
         width: auto;
         height: 100vh;
-        
+
         header {
             .navBar {
-                width:100vw;
+                width: 100vw;
                 background-color: #f4f4f4;
 
                 .btn {
@@ -56,7 +56,7 @@
                     .auto {
                         display: block;
                         width: 90vw;
-                        margin-top: 5rem;
+                        margin-top: 1rem;
                         height: auto;
                         margin-left: 0;
                     }
@@ -64,7 +64,7 @@
                     .letrasAuto {
                         display: flex;
                         flex-direction: column;
-                        margin-top: 2rem;
+                        margin-top: 1rem;
                         margin-left: 0;
                         gap: 1rem;
                         position: relative;
@@ -76,15 +76,7 @@
                             font-size: 2rem;
                         }
 
-                        .btn {
-                            display: flex;
-                            width: 50vw;
-                            text-align: center;
-                            justify-content: center;
-                            align-items: center;
-                            margin-left: 25vw;
-                            font-size: 3vh;
-                        }
+                        
 
                         .precioAuto {
                             font-size: 1.5rem;
@@ -187,7 +179,7 @@
                 flex-direction: column;
                 gap: 3rem;
                 align-items: center;
-                font-size: 3vh;
+                font-size: 2vh;
                 font-weight: 600;
                 margin-top: 3rem;
                 margin: 0;
@@ -252,7 +244,99 @@
 
     /*-------FIN DESCRIPCION-----*/
 
+    body {
+        
+        main {
+            .golfR {
+                .boton{
+                    .btn{
+                        width: 50vw;
+                        justify-content: center;
+                        margin-left: 25%;
+                        margin-top: 2%;
+                    }
+                    
+                }
+                .contenedorTotal {
+                    .descImagenes{
+                        display: grid;
+                        gap: 1.5rem;
+                        border-radius: 5%;
+                        grid-template-columns: 25% 25%;
+                        justify-content: center;
+                        margin-top: 15%;
+                        margin-bottom: 15%;
+                        text-align: center;
 
+                        .motor{
+                            .txtSec{
+                                color: rgb(114, 114, 114);
+                                font-weight: 600;
+                                margin: 5%;
+                                
+                            }
+                            .imeg{
+                                width: 50%;
+                                height: auto;
+                            }
+                        }
+                        .potencia{
+                            .txtSec{
+                                color: rgb(114, 114, 114);
+                                font-weight: 600;
+                                margin: 5%;
+                            }
+                            .imeg{
+                                width: 50%;
+                                height: auto;
+                            }
+                        }
+                        .traccion{
+                            .txtSec{
+                                color: rgb(114, 114, 114);
+                                font-weight: 600;
+                                margin: 5%;
+                            }
+                            .imeg{
+                                width: 50%;
+                                height: auto;
+                                margin: 5%;
+                            }
+                        }
+                        .combustible{
+                            .txtSec{
+                                color: rgb(114, 114, 114);
+                                font-weight: 600;
+                                margin: 5%;
+                            }
+                            .imeg{
+                                width: 40%;
+                                height: auto;
+                            }
+                        }
+                    }
+                    .letrasAuto {
+                        margin: 0;
+                        margin-left: 5%;
+                        text-align: left;
+                        .nombreAuto{
+                            text-align: left;
+                        }
+                        .precioAuto{
+                            text-align: left;
+                        }
+                        .datosA {
+                            color: rgb(133, 133, 133);
+                            text-align: left;
+                            margin: 0;
+                            text-shadow: black solid 1px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
 
 
     /*navbar-------*/
@@ -263,6 +347,7 @@
     body {
         width: 100vw;
         height: auto;
+
         main {
             .contenedor {
                 .textoMain {
@@ -274,9 +359,11 @@
             .sectionRec {
                 .productosRecomendados {
                     width: 100%;
+
                     .amarok {
                         width: 70vw;
                         height: fit-content;
+
                         img {
                             margin-top: 0;
                             width: 110%;
@@ -284,16 +371,19 @@
                             margin-left: -2rem;
                         }
                     }
+
                     .golfgti {
                         width: 70vw;
                         height: fit-content;
+
                         img {
                             width: 80%;
                             height: auto;
                             margin-top: 0;
                             margin-left: 2rem;
                         }
-                        p{
+
+                        p {
                             text-align: left;
                         }
                     }
@@ -301,8 +391,9 @@
                     .vento {
                         width: 70vw;
                         height: fit-content;
+
                         img {
-                            
+
                             width: 90%;
                             height: auto;
                             margin-top: 0;
@@ -313,9 +404,10 @@
 
             /*FIN PAG MAIN  */
             .contenedorTotal {
-                
+
                 .dataCompra {
                     margin-bottom: 15%;
+
                     .auto {
                         width: 55vw;
                         margin: 0;
@@ -333,20 +425,23 @@
                         }
                     }
                 }
-                .espacioDesc{
+
+                .espacioDesc {
                     font-size: 2rem;
                 }
-                .contenedorDes{
-                    .txtDescripcion{
+
+                .contenedorDes {
+                    .txtDescripcion {
                         font-size: 1.5rem;
                     }
-                    .consumo{
+
+                    .consumo {
                         font-size: 1.75rem;
                         font-weight: 500;
                     }
                 }
             }
-            
+
 
             .otrosAutos {
                 display: flex;
@@ -431,27 +526,29 @@
     body {
         width: 100vw;
         height: auto;
+
         main {
-            .sectionNovedades{
-                .productosDestacados:hover{
-                    
+            .sectionNovedades {
+                .productosDestacados:hover {
+
                     transform: scale(1.1);
                     transition: 0.7s;
                 }
             }
+
             .sectionRec {
                 .productosRecomendados {
-                    
+
                     .golfgti {
-                    
-                        
+
+
                         img {
                             width: 100%;
                             margin-top: 0;
-                            height:max-content;
+                            height: max-content;
                         }
                     }
-                    
+
 
                     .vento {
                         img {
@@ -459,7 +556,7 @@
                             height: fit-content;
                         }
                     }
-                    
+
 
                     .amarok {
                         img {
@@ -468,7 +565,7 @@
                             height: fit-content;
                         }
                     }
-                    
+
                 }
             }
         }
@@ -476,7 +573,7 @@
 
     /*MAIN*/
     .dataCompra {
-        margin-top: 10rem;
+        margin-top: 7rem;
         display: flex;
         flex-direction: row;
         background-color: #f4f4f4;
@@ -589,15 +686,16 @@
         align-items: center;
         justify-content: center;
         width: 100vw;
+
         h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
-    
+
         div {
             display: inline-block;
             margin: 0.5rem;
-            
+
             img {
                 width: 40px;
                 height: 40px;

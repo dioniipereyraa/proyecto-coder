@@ -6,10 +6,11 @@ body {
     width: 100vw;
     height: 100vh;
     main {
+        
         .contenedorTotal {
             .dataCompra {
 
-                margin-top: 10rem;
+                margin-top: 2rem;
                 display: flex;
                 flex-direction: row;
                 background-color: $sec-color;
@@ -36,11 +37,6 @@ body {
                         margin-top: 1rem;
                         text-align: center;
                     }
-                }
-
-                .btn {
-                    width: 100%;
-                    font-size: 2rem;
                 }
 
             }
@@ -92,7 +88,7 @@ body {
         }
 
         .tituloOtrosAutos {
-            font-size: 3rem;
+            font-size: 2rem;
             text-align: center;
             margin-top: 10rem;
             margin-bottom: 3%;
