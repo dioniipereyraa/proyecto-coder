@@ -24,7 +24,7 @@
                 margin: 0 auto;
                 background-color: rgb(211, 211, 211);
                 border-radius: 5%;
-                height: 25%;
+                height: auto;
             }
             .carousel:hover{
                 background-color: rgb(160, 160, 160);
@@ -303,12 +303,16 @@
 
         main {
             .vento{ /*PAGINA VENTO TSI*/
+                .btn{
+                    width: 50%;
+                    margin-left: 25%;
+                    margin-top: 10%;
+                }
                 .contenedorTotal{
                     .dataCompra{
                         .letrasAuto{
-                            .btn{
-                                width: 50%;
-                                margin-left: 25%;
+                            .nombreAuto{
+                                margin-bottom: 0;
                             }
                             .precioAuto{
                                 margin-top: 0;
@@ -653,13 +657,85 @@
     }
 
 
-    /*----- PAGINA GOLF R------*/
+    
     body {
 
         main {
-            .amarokv6 {
 
-                /* PAGINA AMAROK V6 */
+            .vento{ /*PAGINA VENTO TSI*/
+                /*------- CAROUSEL VENTO----------*/
+                .carousel {
+                    max-width: 80%;
+                    margin: 0 auto;
+                    background-color: rgb(211, 211, 211);
+                    border-radius: 5%;
+                    height: auto;
+                }
+                .carousel:hover{
+                    background-color: rgb(160, 160, 160);
+                }
+                .carousel-inner{
+                    text-align: center;
+                    text-decoration: none;
+                    img {
+                        margin: 0;
+                        width: 90%;
+                        height: auto;
+                        object-fit: cover;
+                        justify-content: center;
+                    }
+                    .imgGolf{
+                        margin-top: -10%;
+                    }
+                    .imgGolfG{
+                        margin-top: 5%;
+                    }
+                    .imgAmarok{
+                        margin-top: 5%;
+                    }
+                    a{
+                        text-decoration: none;
+                        text-align: center;
+                        .tituloCarr{
+                            font-weight: 700;
+                            text-decoration: none;
+                            color: $inner-box-color;
+                            background-color: $box-color;
+                            border-radius: 10px;
+                            border-width: 10px;
+                            padding: 3px;
+                            width: fit-content;
+                            margin-left: 10%;
+                            font-size: 2rem;
+                            
+                        }
+                    }
+                } 
+                .carousel-control-prev-icon, .carousel-control-next-icon {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: 50%;
+                }
+                /*------- CAROUSEL VENTO FIN ----------*/
+                .btn{
+                    width: 50%;
+                    margin-left: 25%;
+                    margin-top: 10%;
+                }
+                .contenedorTotal{
+                    .dataCompra{
+                        .letrasAuto{
+                            .nombreAuto{
+                                margin-bottom: 0;
+                            }
+                            .precioAuto{
+                                margin-top: 0;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+            .amarokv6 {/* PAGINA AMAROK V6 */
                 .contenedorTotal {
                     .dataCompra {
                         display: block;
@@ -1020,10 +1096,162 @@
         }
     }
 
-    /*-----PAGINA GOLF R-------*/
+    
     body {
 
         main {
+            .vento{ /*PAGINA VENTO TSI*/
+                /*------- CAROUSEL VENTO----------*/
+                .carousel {
+                    max-width: 50%;
+                    margin: 0 auto;
+                    background-color: rgb(211, 211, 211);
+                    border-radius: 5%;
+                    height: auto;
+                }
+                .carousel:hover{
+                    background-color: rgb(160, 160, 160);
+                }
+                .carousel-inner{
+                    text-align: center;
+                    text-decoration: none;
+                    img {
+                        margin: 0;
+                        width: 70%;
+                        height: auto;
+                        object-fit: cover;
+                        justify-content: center;
+                    }
+                    .imgGolf{
+                        margin-top: -5.7%;
+                    }
+                    .imgGolfG{
+                        margin-top: 5%;
+                    }
+                    .imgAmarok{
+                        margin-top: 5%;
+                    }
+                    a{
+                        text-decoration: none;
+                        text-align: center;
+                        .tituloCarr{
+                            font-weight: 700;
+                            text-decoration: none;
+                            color: $inner-box-color;
+                            background-color: $box-color;
+                            border-radius: 10px;
+                            border-width: 10px;
+                            padding: 3px;
+                            width: fit-content;
+                            margin-left: 10%;
+                            font-size: 1.75rem;
+                            
+                        }
+                    }
+                } 
+                .carousel-control-prev-icon, .carousel-control-next-icon {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: 50%;
+                }
+                /*------- CAROUSEL VENTO FIN ----------*/
+                .btn{
+                    width: 25%;
+                    margin-left: 37.5%;
+                    margin-top: 5%;
+                }
+                .contenedorTotal{
+                    .descImagenes {
+                        display: grid;
+                        gap: 1.5rem;
+                        border-radius: 5%;
+                        grid-template-columns: 25% 25%;
+                        justify-content: center;
+                        margin: 5%;
+                        text-align: center;
+
+
+
+                        .motor {
+                            p {
+                                font-size: 1.75rem;
+                            }
+
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 700;
+                                margin: 5%;
+
+                            }
+
+                            .imeg {
+                                width: 10%;
+                                height: auto;
+                            }
+                        }
+
+                        .potencia {
+                            p {
+                                font-size: 1.75rem;
+                            }
+
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 700;
+                                margin: 5%;
+                            }
+
+                            .imeg {
+                                width: 10%;
+                                height: auto;
+                            }
+                        }
+
+                        .traccion {
+                            p {
+                                font-size: 1.75rem;
+                            }
+
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 700;
+                                margin: 5%;
+                            }
+
+                            .imeg {
+                                width: 10%;
+                                height: auto;
+                                margin: 5%;
+                            }
+                        }
+
+                        .combustible {
+                            font-size: 1.75rem;
+
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 700;
+                                margin: 5%;
+                            }
+
+                            .imeg {
+                                width: 15%;
+                                height: auto;
+                            }
+                        }
+                    }
+                    .dataCompra{
+                        .letrasAuto{
+                            .nombreAuto{
+                                margin-bottom: 0;
+                            }
+                            .precioAuto{
+                                margin-top: 0;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
             .amarokv6 {
 
                 /* PAGINA AMAROK V6 */
