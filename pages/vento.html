@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en" class="paginaSec">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
     <header>
@@ -23,7 +22,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html" >Home</a>
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="../pages/golf.r.html">Golf R</a>
@@ -45,54 +44,71 @@
         </div>
     </header>
     <main>
+        <div class="vento">
             <section class="contenedorTotal">
-            <div class="dataCompra">
-                <img class="auto" src="../img/vento.png" alt="">
-                <div class="letrasAuto"> 
-                    <h1 class="nombreAuto">Vento TSI 2.0 2018</h1>
-                    <input class="btn btn-outline-success btn-lg" type="button" value="Comprar">
-                    <h2 class="precioAuto">$11.000</h2>
+                <div class="dataCompra">
+                    <img class="auto" src="../img/vento.png" alt="">
+                    <div class="letrasAuto"> 
+                        <h1 class="nombreAuto">Vento TSI 2.0 2018</h1>
+                        <input class="btn btn-outline-success btn-lg" type="button" value="Comprar">
+                        <h2 class="precioAuto">$11.000</h2>
+                    </div>
                 </div>
-
-            </div>
-            <div class="espacioDesc">
-                Descripción
-            </div>
-            <div class="contenedorDes">
-                <div class="primeraParte">
-                    <p class="txtDescripcion">Modelo: Volkswagen Vento TSI 76.000km</p>
-                    <p class="txtDescripcion">Motorizacion: Motor I4 1.4T  150hp</p>
-                    <p class="txtDescripcion">Velocidades: Caja Automatica DSG 7 velocidades</p>
-                    <p class="txtDescripcion">Traccion: Traccion delantera</p>
+                <div class="espacioDesc">
+                    Descripción
                 </div>
-                <div class="consumo">Consumo:
-                    <p class="txtDescripcion">Urbano - 6.1L/100km</p>
-                    <p class="txtDescripcion">Extraurbano - 4.3L/100km</p>
-                    <p class="txtDescripcion">Medio - 5L/100km</p>
+                <div class="contenedorDes">
+                    <div class="primeraParte">
+                        <p class="txtDescripcion">Modelo: Volkswagen Vento TSI 76.000km</p>
+                        <p class="txtDescripcion">Motorizacion: Motor I4 1.4T  150hp</p>
+                        <p class="txtDescripcion">Velocidades: Caja Automatica DSG 7 velocidades</p>
+                        <p class="txtDescripcion">Traccion: Traccion delantera</p>
+                    </div>
+                    <div class="consumo">Consumo:
+                        <p class="txtDescripcion">Urbano - 6.1L/100km</p>
+                        <p class="txtDescripcion">Extraurbano - 4.3L/100km</p>
+                        <p class="txtDescripcion">Medio - 5L/100km</p>
+                    </div>
+                    <div class="parteFinal">
+                        <p class="txtDescripcion">V-Max: 220km/h (limitado)</p>
+                        <p class="txtDescripcion">0-100 km/h: 8.6s</p>
+                    </div>
                 </div>
-                <div class="parteFinal">
-                    <p class="txtDescripcion">V-Max: 220km/h (limitado)</p>
-                    <p class="txtDescripcion">0-100 km/h: 8.6s</p>
-                </div>
-            </div>
-        </section>
+            </section>
         <h2 class="tituloOtrosAutos">Te puede interesar:</h2>
-        <div class="otrosAutos">
-            <a class="otroAuto1" href="../pages/golf.r.html">
-                <img class="otroAuto1" src="../img/golfr.png" alt="Golf R">
-                <p class="precioAutos"> $62.000</p>
-            </a>
-            <a class="otroAuto2" href="../pages/golf.html">
-                <img class="otroAuto2" src="../img/golfgti.png" alt="Golf GTI">
-                <p class="precioAutos"> $32.000</p>
-            </a>
-            <a class="otroAuto3" href="../pages/amarok.html">
-                <img class="otroAuto3" src="../img/v6.png" alt="Amarok V6">
-                <p class="precioAutos">$45.000</p>
-            </a>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="./golf.r.html" class="tituloCarr">
+                    <img src="../img/golfr.png"class="imgGolf" alt="Golf R">
+                    <p class="tituloCarr">Golf R 2024</p>
+                </a>
+              </div>
+              <div class="carousel-item">  
+                <a href="./golf.html" class="tituloCarr">
+                    <img src="../img/golfgti.png" class="imgGolfG" alt="Golf GTI">
+                    <p class="tituloCarr">Golf GTI 2019</p>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="./amarok.html">
+                    <img src="../img/amarok.png" class="imgAmarok" alt="Amarok">
+                    <p class="tituloCarr">Amarok v6 2022</p>
+                </a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
+        
     </main>
-    
     <footer>
         <div class="sobreNosotros">
             <h3 class="tituloSobreNosotros">Síguenos en nuestras redes</h3>

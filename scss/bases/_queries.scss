@@ -18,6 +18,59 @@
         }
 
         main {
+            /*------- CAROUSEL VENTO----------*/
+            .carousel {
+                max-width: 80%;
+                margin: 0 auto;
+                background-color: rgb(211, 211, 211);
+                border-radius: 5%;
+                height: 25%;
+            }
+            .carousel:hover{
+                background-color: rgb(160, 160, 160);
+            }
+            .carousel-inner{
+                text-align: center;
+                text-decoration: none;
+                img {
+                    margin: 0;
+                    width: 90%;
+                    height: auto;
+                    object-fit: cover;
+                    justify-content: center;
+                }
+                .imgGolf{
+                    margin-top: -10%;
+                }
+                .imgGolfG{
+                    margin-top: 5%;
+                }
+                .imgAmarok{
+                    margin-top: 5%;
+                }
+                a{
+                    text-decoration: none;
+                    text-align: center;
+                    .tituloCarr{
+                        font-weight: 700;
+                        text-decoration: none;
+                        color: $inner-box-color;
+                        background-color: $box-color;
+                        border-radius: 5px;
+                        border-width: 10px;
+                        padding: 3px;
+                        width: fit-content;
+                        margin-left: 10%;
+                        
+                    }
+                }
+            } 
+            .carousel-control-prev-icon, .carousel-control-next-icon {
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 50%;
+            }
+            /*------- CAROUSEL VENTO FIN ----------*/
+    
             .contenedor {
                 display: flex;
                 position: relative;
@@ -249,6 +302,23 @@
     body {
 
         main {
+            .vento{ /*PAGINA VENTO TSI*/
+                .contenedorTotal{
+                    .dataCompra{
+                        .letrasAuto{
+                            .btn{
+                                width: 50%;
+                                margin-left: 25%;
+                            }
+                            .precioAuto{
+                                margin-top: 0;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+
+            }
             .amarokv6 {
 
                 /* PAGINA AMAROK V6 */
@@ -284,10 +354,18 @@
                 }
 
                 .contenedorVideo {
+                    margin-top: 15%;
+                    background-color: $primary-color;
+                    border-radius: 5px;
+                    width: 90%;
+                    margin-left: 5%;
+                    border: 5px;
+                    border-color: black;
                     .video {
                         width: 90%;
                         margin-left: 5%;
-                        margin-top: 10%;
+                        align-items: center;
+                        margin-top: 2.5%;
                     }
                 }
 
@@ -579,16 +657,18 @@
     body {
 
         main {
-            .amarokv6 { 
+            .amarokv6 {
 
                 /* PAGINA AMAROK V6 */
                 .contenedorTotal {
                     .dataCompra {
                         display: block;
-                        .auto{
+
+                        .auto {
                             width: 80%;
                             margin-left: 10%;
                         }
+
                         .btn {
                             position: absolute;
                             margin-top: 7%;
@@ -602,6 +682,7 @@
                             gap: 0;
                             margin-top: 10%;
                             padding-top: 10%;
+
                             .nombreAuto {
                                 text-align: left;
                             }
@@ -629,6 +710,7 @@
                 }
 
             }
+
             .golfR {
                 .boton {
                     .btn {
@@ -948,21 +1030,24 @@
                 .contenedorTotal {
                     .dataCompra {
                         display: block;
+
                         .btn {
                             margin-top: 0;
                             width: 30%;
                             margin-left: 5%;
                             margin-bottom: 5%;
                         }
-                        .auto{
+
+                        .auto {
                             margin-left: 10%;
                             margin-top: -5%;
                         }
+
                         .letrasAuto {
                             margin-left: 5%;
                             gap: 0;
                             margin-bottom: 0;
-                            
+
 
                             .nombreAuto {
                                 text-align: left;
@@ -993,6 +1078,7 @@
                 }
 
             }
+
             .golfR {
                 .boton {
                     .btn {
