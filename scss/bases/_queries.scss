@@ -521,22 +521,25 @@
                     }
 
                     .letrasAuto {
-                        margin: 0;
+                        
                         margin-left: 5%;
                         text-align: left;
+                        gap: 0;
 
                         .nombreAuto {
                             text-align: left;
+                            margin: 1%;
                         }
 
                         .precioAuto {
                             text-align: left;
+                            margin: 1%;
                         }
 
                         .datosA {
                             color: $txtSec-Color;
                             text-align: left;
-                            margin: 0;
+                            margin: 1%;
                             text-shadow: black solid 1px;
                         }
                     }
