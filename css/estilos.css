@@ -659,6 +659,53 @@ body main .otrosAutos .otroAuto3:hover {
     margin-left: 25%;
     margin-top: 10%;
   }
+  body main .vento .contenedorTotal .descImagenes {
+    display: grid;
+    gap: 1.5rem;
+    border-radius: 5%;
+    grid-template-columns: 25% 25%;
+    justify-content: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    text-align: center;
+  }
+  body main .vento .contenedorTotal .descImagenes .motor .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 600;
+    margin: 5%;
+  }
+  body main .vento .contenedorTotal .descImagenes .motor .imeg {
+    width: 50%;
+    height: auto;
+  }
+  body main .vento .contenedorTotal .descImagenes .potencia .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 600;
+    margin: 5%;
+  }
+  body main .vento .contenedorTotal .descImagenes .potencia .imeg {
+    width: 50%;
+    height: auto;
+  }
+  body main .vento .contenedorTotal .descImagenes .traccion .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 600;
+    margin: 5%;
+  }
+  body main .vento .contenedorTotal .descImagenes .traccion .imeg {
+    width: 50%;
+    height: auto;
+    margin: 5%;
+  }
+  body main .vento .contenedorTotal .descImagenes .combustible .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 600;
+    margin: 5%;
+  }
+  body main .vento .contenedorTotal .descImagenes .combustible .imeg {
+    width: 40%;
+    height: auto;
+  }
   body main .vento .contenedorTotal .dataCompra .letrasAuto .nombreAuto {
     margin-bottom: 0;
   }
@@ -965,6 +1012,65 @@ body main .otrosAutos .otroAuto3:hover {
     width: 50%;
     margin-left: 25%;
     margin-top: 10%;
+  }
+  body main .vento .contenedorTotal .descImagenes {
+    display: grid;
+    gap: 1.5rem;
+    border-radius: 5%;
+    grid-template-columns: 25% 25%;
+    justify-content: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    text-align: center;
+  }
+  body main .vento .contenedorTotal .descImagenes .motor p {
+    font-size: 1.75rem;
+  }
+  body main .vento .contenedorTotal .descImagenes .motor .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 700;
+    margin: 5%;
+  }
+  body main .vento .contenedorTotal .descImagenes .motor .imeg {
+    width: 50%;
+    height: auto;
+  }
+  body main .vento .contenedorTotal .descImagenes .potencia p {
+    font-size: 1.75rem;
+  }
+  body main .vento .contenedorTotal .descImagenes .potencia .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 700;
+    margin: 5%;
+  }
+  body main .vento .contenedorTotal .descImagenes .potencia .imeg {
+    width: 50%;
+    height: auto;
+  }
+  body main .vento .contenedorTotal .descImagenes .traccion p {
+    font-size: 1.75rem;
+  }
+  body main .vento .contenedorTotal .descImagenes .traccion .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 700;
+    margin: 5%;
+  }
+  body main .vento .contenedorTotal .descImagenes .traccion .imeg {
+    width: 50%;
+    height: auto;
+    margin: 5%;
+  }
+  body main .vento .contenedorTotal .descImagenes .combustible {
+    font-size: 1.75rem;
+  }
+  body main .vento .contenedorTotal .descImagenes .combustible .txtSec {
+    color: rgb(114, 114, 114);
+    font-weight: 700;
+    margin: 5%;
+  }
+  body main .vento .contenedorTotal .descImagenes .combustible .imeg {
+    width: 45%;
+    height: auto;
   }
   body main .vento .contenedorTotal .dataCompra .letrasAuto .nombreAuto {
     margin-bottom: 0;

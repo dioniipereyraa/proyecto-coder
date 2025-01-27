@@ -309,6 +309,70 @@
                     margin-top: 10%;
                 }
                 .contenedorTotal{
+                    .descImagenes {
+                        display: grid;
+                        gap: 1.5rem;
+                        border-radius: 5%;
+                        grid-template-columns: 25% 25%;
+                        justify-content: center;
+                        margin-top: 15%;
+                        margin-bottom: 15%;
+                        text-align: center;
+
+                        .motor {
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 600;
+                                margin: 5%;
+
+                            }
+
+                            .imeg {
+                                width: 50%;
+                                height: auto;
+                            }
+                        }
+
+                        .potencia {
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 600;
+                                margin: 5%;
+                            }
+
+                            .imeg {
+                                width: 50%;
+                                height: auto;
+                            }
+                        }
+
+                        .traccion {
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 600;
+                                margin: 5%;
+                            }
+
+                            .imeg {
+                                width: 50%;
+                                height: auto;
+                                margin: 5%;
+                            }
+                        }
+
+                        .combustible {
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 600;
+                                margin: 5%;
+                            }
+
+                            .imeg {
+                                width: 40%;
+                                height: auto;
+                            }
+                        }
+                    }
                     .dataCompra{
                         .letrasAuto{
                             .nombreAuto{
@@ -722,6 +786,84 @@
                     margin-top: 10%;
                 }
                 .contenedorTotal{
+                    .descImagenes {
+                        display: grid;
+                        gap: 1.5rem;
+                        border-radius: 5%;
+                        grid-template-columns: 25% 25%;
+                        justify-content: center;
+                        margin-top: 15%;
+                        margin-bottom: 15%;
+                        text-align: center;
+
+                        .motor {
+                            p {
+                                font-size: 1.75rem;
+                            }
+
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 700;
+                                margin: 5%;
+
+                            }
+
+                            .imeg {
+                                width: 50%;
+                                height: auto;
+                            }
+                        }
+
+                        .potencia {
+                            p {
+                                font-size: 1.75rem;
+                            }
+
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 700;
+                                margin: 5%;
+                            }
+
+                            .imeg {
+                                width: 50%;
+                                height: auto;
+                            }
+                        }
+
+                        .traccion {
+                            p {
+                                font-size: 1.75rem;
+                            }
+
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 700;
+                                margin: 5%;
+                            }
+
+                            .imeg {
+                                width: 50%;
+                                height: auto;
+                                margin: 5%;
+                            }
+                        }
+
+                        .combustible {
+                            font-size: 1.75rem;
+
+                            .txtSec {
+                                color: $txtSec-Color;
+                                font-weight: 700;
+                                margin: 5%;
+                            }
+
+                            .imeg {
+                                width: 45%;
+                                height: auto;
+                            }
+                        }
+                    }
                     .dataCompra{
                         .letrasAuto{
                             .nombreAuto{
