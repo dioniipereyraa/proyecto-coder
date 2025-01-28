@@ -10,7 +10,11 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <meta name="keywords" content="Amarok v6, v6, Amarok, volkswagen amarok v6, v6 2022, Camioneta, Volkswagen Amarok v6 2022, Amarok highline v6">
 </head>
 
 <body>
@@ -44,10 +48,68 @@
                                 </ul>
                             </li>
                         </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            
+                            <ul class="dropdown-menu w-100" id="suggestions"></ul>
+                        </form>
                     </div>
                 </div>
             </nav>
         </div>
+    <script>
+            const suggestionsData = [
+        { name: "Golf", url: "./pages/golf.html" },
+        { name: "Banana", url: "banana.html" },
+        { name: "Cherry", url: "cherry.html" },
+        { name: "Date", url: "date.html" },
+        { name: "Grape", url: "grape.html" },
+        { name: "Kiwi", url: "kiwi.html" },
+        { name: "Orange", url: "orange.html" }
+        ];
+
+        
+        const searchInput = document.getElementById("search-input");
+        const suggestionsContainer = document.getElementById("suggestions");
+
+        
+        searchInput.addEventListener("input", () => {
+        const query = searchInput.value.toLowerCase().trim();
+
+        
+        suggestionsContainer.innerHTML = "";
+
+        if (query) {
+            
+            const filteredSuggestions = suggestionsData.filter(item =>
+            item.name.toLowerCase().includes(query)
+            );
+
+            // Crear elementos del dropdown
+            filteredSuggestions.forEach(item => {
+            const suggestionItem = document.createElement("div");
+            suggestionItem.classList.add("autocomplete-item");
+            suggestionItem.textContent = item.name;
+
+            // Evento para redirigir al hacer clic
+            suggestionItem.addEventListener("click", () => {
+                window.location.href = item.url;
+            });
+
+            suggestionsContainer.appendChild(suggestionItem);
+            });
+        }
+        });
+
+        // Ocultar el dropdown al hacer clic fuera del input
+        document.addEventListener("click", (e) => {
+        if (!e.target.closest("#search-form")) {
+            suggestionsContainer.innerHTML = "";
+        }
+        });
+    </script>    
+    
+
     </header>
     <main>
         <div class="amarokv6">

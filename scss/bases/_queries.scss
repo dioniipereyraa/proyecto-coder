@@ -18,6 +18,7 @@
         }
 
         main {
+            background-color: $background-color;
             /*------- CAROUSEL VENTO----------*/
             .carousel {
                 max-width: 80%;
@@ -560,6 +561,7 @@
         height: auto;
 
         main {
+            background-color: $background-color;
             .contenedor {
                 .textoMain {
                     margin-left: 10%;
@@ -1066,6 +1068,7 @@
         height: auto;
 
         main {
+            background-color: $background-color;
             .sectionNovedades {
                 .productosDestacados:hover {
 
