@@ -325,6 +325,7 @@ body main .sobreNos .sobreContent .txtSobreNos p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body main .tituloComentarios {
+  margin-top: 10%;
   font-size: 28px;
   text-align: center;
 }
@@ -351,9 +352,10 @@ body main .comentarios .comentariosTxt p {
   font-style: italic;
 }
 body main .autosVendidos {
+  margin-top: 5%;
   text-align: center;
   padding: 50px 10%;
-  background-color: #f8f9fa;
+  background-color: #f4f4f4;
 }
 body main .autosVendidos h2 {
   font-size: 28px;
@@ -368,7 +370,7 @@ body main .autosVendidos .sectAutos .autoBox {
   background: white;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.199);
   width: 250px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
@@ -720,6 +722,7 @@ body main .otrosAutos .otroAuto3:hover {
   }
   body main .sectionRec .productosRecomendados .golfgti {
     width: 90vw;
+    max-height: auto;
   }
   body main .sectionRec .productosRecomendados .golfgti img {
     width: 80vw;
@@ -791,6 +794,10 @@ body main .otrosAutos .otroAuto3:hover {
   /*-------FIN DESCRIPCION-----*/
   body main {
     /*FIN PAG amarok v6-------*/
+  }
+  body main .golfGti .contenedorTotal .dataCompra .letrasAuto .btn {
+    width: 75%;
+    margin-left: 12.5%;
   }
   body main .vento {
     /*PAGINA VENTO TSI*/
@@ -897,10 +904,27 @@ body main .otrosAutos .otroAuto3:hover {
     /* PAGINA GOLF R */
   }
   body main .golfR .boton .btn {
-    width: 50vw;
+    width: 50%;
     justify-content: center;
     margin-left: 25%;
     margin-top: 2%;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  body main .golfR .boton .btn:hover {
+    background-color: #2d9e49;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+  body main .golfR .boton .btn:active {
+    transform: scale(0.95);
   }
   body main .golfR .contenedorTotal .descImagenes {
     display: grid;
@@ -1146,6 +1170,9 @@ body main .otrosAutos .otroAuto3:hover {
     height: 6vw;
     margin: 1rem;
   }
+  body main .golfGti .contenedorTotal .dataCompra .letrasAuto .btn {
+    width: 100%;
+  }
   body main .vento {
     /*PAGINA VENTO TSI*/
     /*------- CAROUSEL VENTO----------*/
@@ -1205,7 +1232,23 @@ body main .otrosAutos .otroAuto3:hover {
   body main .vento .btn {
     width: 50%;
     margin-left: 25%;
-    margin-top: 10%;
+    margin-top: 5%;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  body main .vento .btn:hover {
+    background-color: #2d9e49;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+  body main .vento .btn:active {
+    transform: scale(0.95);
   }
   body main .vento .contenedorTotal .descImagenes {
     display: grid;
@@ -1285,10 +1328,29 @@ body main .otrosAutos .otroAuto3:hover {
   }
   body main .amarokv6 .contenedorTotal .dataCompra .btn {
     position: absolute;
-    margin-top: 7%;
-    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    width: 40%;
     right: 19%;
     top: 21%;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .btn:hover {
+    background-color: #2d9e49;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .btn:active {
+    transform: scale(0.95);
   }
   body main .amarokv6 .contenedorTotal .dataCompra .letrasAuto {
     margin-left: 5%;
@@ -1313,10 +1375,26 @@ body main .otrosAutos .otroAuto3:hover {
     margin-top: 10%;
   }
   body main .golfR .boton .btn {
-    width: 50vw;
-    justify-content: center;
+    width: 50%;
     margin-left: 25%;
-    margin-top: 2%;
+    margin-top: 5%;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  body main .golfR .boton .btn:hover {
+    background-color: #2d9e49;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+  body main .golfR .boton .btn:active {
+    transform: scale(0.95);
   }
   body main .golfR .contenedorTotal .descImagenes {
     display: grid;
@@ -1682,9 +1760,25 @@ body main .otrosAutos .otroAuto3:hover {
   }
   body main .amarokv6 .contenedorTotal .dataCompra .btn {
     margin-top: 0;
-    width: 30%;
+    width: 25%;
     margin-left: 5%;
     margin-bottom: 5%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .btn:hover {
+    background-color: #2d9e49;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+  body main .amarokv6 .contenedorTotal .dataCompra .btn:active {
+    transform: scale(0.95);
   }
   body main .amarokv6 .contenedorTotal .dataCompra .auto {
     margin-left: 10%;
@@ -1714,11 +1808,26 @@ body main .otrosAutos .otroAuto3:hover {
     margin-top: 10%;
   }
   body main .golfR .boton .btn {
-    width: 25vw;
-    justify-content: center;
-    text-align: center;
+    width: 25%;
     margin-left: 37.5%;
-    margin-top: 2%;
+    margin-top: 5%;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  body main .golfR .boton .btn:hover {
+    background-color: #2d9e49;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+  body main .golfR .boton .btn:active {
+    transform: scale(0.95);
   }
   body main .golfR .contenedorTotal .descImagenes {
     display: grid;

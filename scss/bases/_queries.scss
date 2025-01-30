@@ -19,53 +19,59 @@
 
         main {
             background-color: $background-color;
-            .sobreNos{
-                .sobreContent{
+
+            .sobreNos {
+                .sobreContent {
                     display: block;
                     flex-direction: column;
                     margin: 0;
 
-                    img{
+                    img {
                         width: 100%;
                     }
-                    .txtSobreNos{
-                        
-                        h2{
+
+                    .txtSobreNos {
+
+                        h2 {
                             margin-top: 10%;
                         }
-                        p{
+
+                        p {
                             margin-left: 0;
                             width: 82.5vw;
                         }
                     }
                 }
             }
-            .tituloComentarios{
+
+            .tituloComentarios {
                 font-size: 2rem;
                 text-align: center;
             }
-            .comentarios{
+
+            .comentarios {
                 flex-direction: column;
                 width: 95%;
-                
-                .comentariosTxt{
+
+                .comentariosTxt {
                     width: 100%;
                 }
             }
 
-            .autosVendidos{
-                .sectAutos{
+            .autosVendidos {
+                .sectAutos {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     margin-left: 10%;
                     width: 90%;
-                    .autoBox{
+
+                    .autoBox {
                         text-align: center;
                     }
                 }
             }
-            
+
 
             /*------- CAROUSEL VENTO----------*/
             .carousel {
@@ -362,6 +368,18 @@
     body {
 
         main {
+            .golfGti{
+                .contenedorTotal{
+                    .dataCompra{
+                        .letrasAuto{
+                            .btn{
+                                width: 75%;
+                                margin-left: 12.5%;
+                            }
+                        }
+                    }
+                }
+            }
             .vento {
 
                 /*PAGINA VENTO TSI*/
@@ -513,12 +531,29 @@
                 /* PAGINA GOLF R */
                 .boton {
                     .btn {
-                        width: 50vw;
+                        width: 50%;
                         justify-content: center;
                         margin-left: 25%;
                         margin-top: 2%;
-                    }
+                        padding: 12px 24px;
+                        border: none;
+                        border-radius: 8px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        transition: all 0.3s ease-in-out;
+                        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                        &:hover {
+                            background-color: $hover-color;
+                            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+                            transform: scale(1.05);
+                        }
 
+                        &:active {
+                            transform: scale(0.95);
+                        }
+                    }
                 }
 
                 .contenedorTotal {
@@ -629,58 +664,67 @@
         main {
             background-color: $background-color;
 
-            .sobreNos{
-                .sobreContent{
+            .sobreNos {
+                .sobreContent {
                     display: block;
                     flex-direction: column;
                     margin: 0;
 
-                    img{
+                    img {
                         width: 100%;
                     }
-                    .txtSobreNos{
-                        
-                        h2{
+
+                    .txtSobreNos {
+
+                        h2 {
                             margin-top: 10%;
                         }
-                        p{
+
+                        p {
                             margin-left: 0;
                             width: 82.5vw;
                         }
                     }
                 }
             }
-            .tituloComentarios{
+
+            .tituloComentarios {
                 font-size: 2rem;
                 text-align: center;
             }
-            .comentarios{
+
+            .comentarios {
                 flex-direction: column;
                 width: 95%;
-                
-                .comentariosTxt{
+
+                .comentariosTxt {
                     width: 100%;
                 }
             }
 
-            .autosVendidos{
-                .sectAutos{
+            .autosVendidos {
+                .sectAutos {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     margin-left: 5%;
                     width: 90%;
-                    .autoBox{
+
+                    .autoBox {
                         text-align: center;
-                        img{
+
+                        img {
                             width: 100%;
                             height: auto;
                         }
-                        h3{
+
+                        h3 {
                             text-decoration: none;
-                            color: #333;;
-                        } 
-                        p{
+                            color: #333;
+                            ;
+                        }
+
+                        p {
                             text-decoration: none;
                             color: #777;
                         }
@@ -856,6 +900,17 @@
     body {
 
         main {
+            .golfGti {
+                .contenedorTotal {
+                    .dataCompra {
+                        .letrasAuto {
+                            .btn {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
 
             .vento {
 
@@ -927,7 +982,27 @@
                 .btn {
                     width: 50%;
                     margin-left: 25%;
-                    margin-top: 10%;
+                    margin-top: 5%;
+                    padding: 12px 24px;
+                    border: none;
+                    border-radius: 8px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+
+                    transition: all 0.3s ease-in-out;
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+
+                    &:hover {
+                        background-color: $hover-color;
+                        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+                        transform: scale(1.05);
+                    }
+
+                    &:active {
+                        transform: scale(0.95);
+                    }
                 }
 
                 .contenedorTotal {
@@ -1039,10 +1114,33 @@
 
                         .btn {
                             position: absolute;
-                            margin-top: 7%;
-                            width: 30%;
+                            align-items: center;
+                            justify-content: center;
+                            margin-top: 5%;
+                            width: 40%;
                             right: 19%;
                             top: 21%;
+                            padding: 12px 24px;
+                            border: none;
+                            border-radius: 8px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            cursor: pointer;
+                            transition: all 0.3s ease-in-out;
+                            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+
+                            &:hover {
+                                background-color: $hover-color;
+                                box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+                                transform: scale(1.05);
+                            }
+
+                            &:active {
+                                transform: scale(0.95);
+                            }
+
                         }
 
                         .letrasAuto {
@@ -1082,10 +1180,30 @@
             .golfR {
                 .boton {
                     .btn {
-                        width: 50vw;
-                        justify-content: center;
+                        width: 50%;
                         margin-left: 25%;
-                        margin-top: 2%;
+                        margin-top: 5%;
+                        padding: 12px 24px;
+                        border: none;
+                        border-radius: 8px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        transition: all 0.3s ease-in-out;
+                        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+
+                        &:hover {
+                            background-color: $hover-color;
+                            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+                            transform: scale(1.05);
+                        }
+
+                        &:active {
+                            transform: scale(0.95);
+                        }
+
                     }
 
                 }
@@ -1592,9 +1710,28 @@
 
                         .btn {
                             margin-top: 0;
-                            width: 30%;
+                            width: 25%;
                             margin-left: 5%;
                             margin-bottom: 5%;
+                            padding: 12px;
+                            border: none;
+                            border-radius: 8px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            transition: all 0.3s ease-in-out;
+                            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+                            &:hover {
+                                background-color: $hover-color;
+                                box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+                                transform: scale(1.05);
+                            }
+
+                            &:active {
+                                transform: scale(0.95);
+                            }
+
                         }
 
                         .auto {
@@ -1641,11 +1778,29 @@
             .golfR {
                 .boton {
                     .btn {
-                        width: 25vw;
-                        justify-content: center;
-                        text-align: center;
+                        width: 25%;
                         margin-left: 37.5%;
-                        margin-top: 2%;
+                        margin-top: 5%;
+                        padding: 12px 24px;
+                        border: none;
+                        border-radius: 8px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        transition: all 0.3s ease-in-out;
+                        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+
+                        &:hover {
+                            background-color: $hover-color;
+                            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+                            transform: scale(1.05);
+                        }
+
+                        &:active {
+                            transform: scale(0.95);
+                        }
                     }
 
                 }
