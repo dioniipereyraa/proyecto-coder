@@ -4,11 +4,12 @@
 body {
     width: 100vw;
     height: 100vh;
-    overflow-y: scroll; 
+    overflow-y: scroll;
     overflow-x: hidden;
-    
+
     main {
         background-color: $background-color;
+
         .contenedor {
             display: flex;
             position: relative;
@@ -51,7 +52,7 @@ body {
                 text-shadow: 3px 3px 8px $primary-color;
                 color: rgb(0, 0, 0);
                 text-decoration: none;
-                text-align: center;     
+                text-align: center;
                 margin-bottom: 1rem;
                 margin-top: 3rem;
                 font-weight: 700;
@@ -67,7 +68,7 @@ body {
                 text-decoration: none;
                 align-items: center;
                 margin-bottom: 0;
-                
+
 
                 img {
                     max-width: 100%;
@@ -109,7 +110,7 @@ body {
                     width: 32rem;
                     border-width: 1px;
                     text-decoration: none;
-                    
+
 
                     img {
                         margin-top: 1.5rem;
@@ -122,7 +123,8 @@ body {
                         text-decoration: none;
                         font-weight: 600;
                     }
-                    .desc{
+
+                    .desc {
                         color: rgb(119, 255, 255);
                         margin-top: 1%;
                         padding: 3px;
@@ -137,9 +139,10 @@ body {
 
 
                 .golfgti {
-                    a{
+                    a {
                         text-decoration: none;
                     }
+
                     display: block;
                     padding: 2rem;
                     border: solid;
@@ -165,7 +168,8 @@ body {
                         text-decoration: none;
                         font-weight: 600;
                     }
-                    .desc{
+
+                    .desc {
                         color: rgb(119, 255, 255);
                         margin-top: 1%;
                         padding: 3px;
@@ -204,7 +208,8 @@ body {
                         text-decoration: none;
                         font-weight: 600;
                     }
-                    .desc{
+
+                    .desc {
                         color: rgb(119, 255, 255);
                         margin-top: 2rem;
                         padding: 3px;
@@ -216,19 +221,22 @@ body {
                         font-weight: 600;
                     }
                 }
-                .vento:hover{
+
+                .vento:hover {
                     transform: scale(1.1);
-                    transition: 0.7s;
+                    transition: 0.6s;
                     background-color: $car-box;
                 }
-                .golfgti:hover{
+
+                .golfgti:hover {
                     transform: scale(1.1);
-                    transition: 0.7s;
+                    transition: 0.6s;
                     background-color: $car-box;
                 }
-                .amarok:hover{
+
+                .amarok:hover {
                     transform: scale(1.1);
-                    transition: 0.7s;
+                    transition: 0.6s;
                     background-color: $car-box;
                 }
             }
@@ -243,7 +251,7 @@ body {
         .sectionGrid {
             width: 85vw;
             margin-left: 7.5%;
-            
+
 
             .titulo {
                 font-family: Arial, Helvetica, sans-serif;
@@ -258,7 +266,7 @@ body {
                 max-width: 100%;
                 gap: 5px;
                 max-height: fit-content;
-                
+
             }
 
             .items {
@@ -272,6 +280,119 @@ body {
                 margin: 0.25rem;
                 justify-content: left;
                 align-items: center;
+            }
+        }
+
+        .sobreNos {
+            padding: 50px 10%;
+            background-color: #f8f9fa;
+
+            .sobreContent {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                img {
+                    width: 50%;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+
+                .txtSobreNos {
+                    width: 50%;
+
+                    h2 {
+                        font-size: 28px;
+                        color: #333;
+                        margin-bottom: 10px;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        color: #555;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    }
+                }
+            }
+        }
+
+        .tituloComentarios {
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .comentarios {
+            text-align: center;
+            padding: 50px 10%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+
+
+            .comentariosTxt {
+
+                width: 20%;
+                flex-direction: row;
+                background: #007bff;
+                color: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                max-width: 600px;
+                margin: 1rem;
+
+                p {
+                    font-size: 18px;
+                    font-style: italic;
+                }
+            }
+        }
+
+        .autosVendidos {
+            text-align: center;
+            padding: 50px 10%;
+            background-color: #f8f9fa;
+
+            h2 {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+
+            .sectAutos {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+
+                .autoBox {
+                    background: white;
+                    padding: 15px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    width: 250px;
+                    text-align: center;
+                    transition: transform 0.3s ease-in-out;
+
+                    img {
+                        width: 100%;
+                        border-radius: 8px;
+                        margin-bottom: 10px;
+                    }
+
+                    h3 {
+                        font-size: 20px;
+                        color: #333;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        color: #777;
+                    }
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
             }
         }
 

@@ -250,17 +250,17 @@ body main .sectionRec .productosRecomendados .amarok .desc {
 }
 body main .sectionRec .productosRecomendados .vento:hover {
   transform: scale(1.1);
-  transition: 0.7s;
+  transition: 0.6s;
   background-color: #bebebe;
 }
 body main .sectionRec .productosRecomendados .golfgti:hover {
   transform: scale(1.1);
-  transition: 0.7s;
+  transition: 0.6s;
   background-color: #bebebe;
 }
 body main .sectionRec .productosRecomendados .amarok:hover {
   transform: scale(1.1);
-  transition: 0.7s;
+  transition: 0.6s;
   background-color: #bebebe;
 }
 body main .sectionRec h2 {
@@ -295,6 +295,99 @@ body main .sectionGrid .imgGrid {
   margin: 0.25rem;
   justify-content: left;
   align-items: center;
+}
+body main .sobreNos {
+  padding: 50px 10%;
+  background-color: #f8f9fa;
+}
+body main .sobreNos .sobreContent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+body main .sobreNos .sobreContent img {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+body main .sobreNos .sobreContent .txtSobreNos {
+  width: 50%;
+}
+body main .sobreNos .sobreContent .txtSobreNos h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body main .sobreNos .sobreContent .txtSobreNos p {
+  font-size: 16px;
+  color: #555;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body main .tituloComentarios {
+  font-size: 28px;
+  text-align: center;
+}
+body main .comentarios {
+  text-align: center;
+  padding: 50px 10%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+body main .comentarios .comentariosTxt {
+  width: 20%;
+  flex-direction: row;
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 1rem;
+}
+body main .comentarios .comentariosTxt p {
+  font-size: 18px;
+  font-style: italic;
+}
+body main .autosVendidos {
+  text-align: center;
+  padding: 50px 10%;
+  background-color: #f8f9fa;
+}
+body main .autosVendidos h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+body main .autosVendidos .sectAutos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+body main .autosVendidos .sectAutos .autoBox {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+body main .autosVendidos .sectAutos .autoBox img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+body main .autosVendidos .sectAutos .autoBox h3 {
+  font-size: 20px;
+  color: #333;
+}
+body main .autosVendidos .sectAutos .autoBox p {
+  font-size: 14px;
+  color: #777;
+}
+body main .autosVendidos .sectAutos .autoBox:hover {
+  transform: scale(1.05);
 }
 
 /*ACA VA A ESTAR EL SCSS DE LAS PAGINAS SECUNDARIAS (NO LA PRINCIPAL)*/
@@ -434,6 +527,42 @@ body main .otrosAutos .otroAuto3:hover {
     /*------- CAROUSEL VENTO FIN ----------*/
     /*PAGINAS SEC*/
   }
+  body main .sobreNos .sobreContent {
+    display: block;
+    flex-direction: column;
+    margin: 0;
+  }
+  body main .sobreNos .sobreContent img {
+    width: 100%;
+  }
+  body main .sobreNos .sobreContent .txtSobreNos h2 {
+    margin-top: 10%;
+  }
+  body main .sobreNos .sobreContent .txtSobreNos p {
+    margin-left: 0;
+    width: 82.5vw;
+  }
+  body main .tituloComentarios {
+    font-size: 2rem;
+    text-align: center;
+  }
+  body main .comentarios {
+    flex-direction: column;
+    width: 95%;
+  }
+  body main .comentarios .comentariosTxt {
+    width: 100%;
+  }
+  body main .autosVendidos .sectAutos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    width: 90%;
+  }
+  body main .autosVendidos .sectAutos .autoBox {
+    text-align: center;
+  }
   body main .carousel {
     max-width: 80%;
     margin: 0 auto;
@@ -479,7 +608,8 @@ body main .otrosAutos .otroAuto3:hover {
     width: fit-content;
     margin-left: 10%;
   }
-  body main .carousel-control-prev-icon, body main .carousel-control-next-icon {
+  body main .carousel-control-prev-icon,
+  body main .carousel-control-next-icon {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
   }
@@ -660,7 +790,9 @@ body main .otrosAutos .otroAuto3:hover {
   body main {
     /*FIN PAG amarok v6-------*/
   }
-  body main .vento { /*PAGINA VENTO TSI*/ }
+  body main .vento {
+    /*PAGINA VENTO TSI*/
+  }
   body main .vento .btn {
     width: 50%;
     margin-left: 25%;
@@ -845,6 +977,46 @@ body main .otrosAutos .otroAuto3:hover {
     background-color: rgb(255, 255, 255);
     /*FIN PAG MAIN  */
   }
+  body main .sobreNos .sobreContent {
+    display: block;
+    flex-direction: column;
+    margin: 0;
+  }
+  body main .sobreNos .sobreContent img {
+    width: 100%;
+  }
+  body main .sobreNos .sobreContent .txtSobreNos h2 {
+    margin-top: 10%;
+  }
+  body main .sobreNos .sobreContent .txtSobreNos p {
+    margin-left: 0;
+    width: 82.5vw;
+  }
+  body main .tituloComentarios {
+    font-size: 2rem;
+    text-align: center;
+  }
+  body main .comentarios {
+    flex-direction: column;
+    width: 95%;
+  }
+  body main .comentarios .comentariosTxt {
+    width: 100%;
+  }
+  body main .autosVendidos .sectAutos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 5%;
+    width: 90%;
+  }
+  body main .autosVendidos .sectAutos .autoBox {
+    text-align: center;
+  }
+  body main .autosVendidos .sectAutos .autoBox img {
+    width: 100%;
+    height: auto;
+  }
   body main .contenedor .textoMain {
     margin-left: 10%;
     top: 50%;
@@ -964,7 +1136,8 @@ body main .otrosAutos .otroAuto3:hover {
     height: 6vw;
     margin: 1rem;
   }
-  body main .vento { /*PAGINA VENTO TSI*/
+  body main .vento {
+    /*PAGINA VENTO TSI*/
     /*------- CAROUSEL VENTO----------*/
     /*------- CAROUSEL VENTO FIN ----------*/
   }
@@ -1014,7 +1187,8 @@ body main .otrosAutos .otroAuto3:hover {
     margin-left: 10%;
     font-size: 2rem;
   }
-  body main .vento .carousel-control-prev-icon, body main .vento .carousel-control-next-icon {
+  body main .vento .carousel-control-prev-icon,
+  body main .vento .carousel-control-next-icon {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
   }
@@ -1089,7 +1263,9 @@ body main .otrosAutos .otroAuto3:hover {
     margin-top: 0;
     font-weight: 600;
   }
-  body main .amarokv6 { /* PAGINA AMAROK V6 */ }
+  body main .amarokv6 {
+    /* PAGINA AMAROK V6 */
+  }
   body main .amarokv6 .contenedorTotal .dataCompra {
     display: block;
   }
@@ -1226,7 +1402,7 @@ body main .otrosAutos .otroAuto3:hover {
   }
   body main .sectionNovedades .productosDestacados:hover {
     transform: scale(1.1);
-    transition: 0.7s;
+    transition: 0.6s;
   }
   body main .sectionRec .productosRecomendados .golfgti img {
     width: 100%;
@@ -1345,7 +1521,8 @@ body main .otrosAutos .otroAuto3:hover {
     width: 40px;
     height: 40px;
   }
-  body main .vento { /*PAGINA VENTO TSI*/
+  body main .vento {
+    /*PAGINA VENTO TSI*/
     /*------- CAROUSEL VENTO----------*/
     /*------- CAROUSEL VENTO FIN ----------*/
   }
@@ -1395,7 +1572,8 @@ body main .otrosAutos .otroAuto3:hover {
     margin-left: 10%;
     font-size: 1.75rem;
   }
-  body main .vento .carousel-control-prev-icon, body main .vento .carousel-control-next-icon {
+  body main .vento .carousel-control-prev-icon,
+  body main .vento .carousel-control-next-icon {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
   }
@@ -1403,6 +1581,23 @@ body main .otrosAutos .otroAuto3:hover {
     width: 25%;
     margin-left: 37.5%;
     margin-top: 5%;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  body main .vento .btn:hover {
+    background-color: #2d9e49;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+  body main .vento .btn:active {
+    transform: scale(0.95);
   }
   body main .vento .contenedorTotal .descImagenes {
     display: grid;
