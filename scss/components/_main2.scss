@@ -1,11 +1,14 @@
 /*ACA VA A ESTAR EL SCSS DE LAS PAGINAS SECUNDARIAS (NO LA PRINCIPAL)*/
 @import '../bases/operaciones';
+
 body {
     width: 100vw;
     height: 100vh;
+
     main {
-        
+
         background-color: $background-color;
+
         .contenedorTotal {
             .dataCompra {
 
@@ -125,23 +128,24 @@ body {
                 text-align: center;
 
             }
-            .otroAuto1:hover{
+
+            .otroAuto1:hover {
                 transform: scale(1.1);
                 transition: 0.7s;
-                
-            }
-            .otroAuto2:hover{
-                transform: scale(1.1);
-                transition: 0.7s;
-                
-            }
-            .otroAuto3:hover{
-                transform: scale(1.1);
-                transition: 0.7s;
-                
+
             }
 
+            .otroAuto2:hover {
+                transform: scale(1.1);
+                transition: 0.7s;
+
+            }
+
+            .otroAuto3:hover {
+                transform: scale(1.1);
+                transition: 0.7s;
+
+            }
         }
-
     }
 }
