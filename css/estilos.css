@@ -253,17 +253,17 @@ body main .sectionRec .productosRecomendados .amarok .desc {
 }
 body main .sectionRec .productosRecomendados .vento:hover {
   transform: scale(1.1);
-  transition: 0.6s;
+  transition: 0.4s;
   background-color: #bebebe;
 }
 body main .sectionRec .productosRecomendados .golfgti:hover {
   transform: scale(1.1);
-  transition: 0.6s;
+  transition: 0.4s;
   background-color: #bebebe;
 }
 body main .sectionRec .productosRecomendados .amarok:hover {
   transform: scale(1.1);
-  transition: 0.6s;
+  transition: 0.4s;
   background-color: #bebebe;
 }
 body main .sectionRec h2 {
@@ -301,7 +301,7 @@ body main .sectionGrid .imgGrid {
 }
 body main .sobreNos {
   padding: 50px 10%;
-  background-color: #f8f9fa;
+  background-color: #f4f4f4;
   margin-top: 5%;
 }
 body main .sobreNos .sobreContent {

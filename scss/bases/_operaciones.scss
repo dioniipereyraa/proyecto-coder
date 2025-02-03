@@ -1,11 +1,36 @@
+// colores principales
 $primary-color: rgb(221, 220, 220);
 $sec-color: #f4f4f4;
-$box-color: rgb(82, 82, 82);
-$theme: light;
-$car-box: #bebebe;
+$background-color: rgb(255, 255, 255);
+
+// color descripcion y letras
 $font-color: black;
 $txtSec-Color: rgb(114, 114, 114);
-$inner-box-color: rgb(119, 255, 255);
-$background-color: rgb(255, 255, 255);
+
+// color hover en pagina main
+$car-box: #bebebe;
+
+// texto carrusel pagina vento
+$inner-box-txt-color: rgb(119, 255, 255);
+$box-color: rgb(82, 82, 82);
+
+//color boton 
 $hover-color: #2d9e49;
-$text-color: #fff;
+
+// descripcion autos recomendados pagina main
+$des-car-bgcolor: rgb(65,65,65);
+$des-car-txtcolor: rgb(119, 255, 255);
+
+// sobre nosotros section
+$titulo-color: #333;
+$txtSobreNos-color: #555;
+
+// comentarios sobre nuestra pagina
+$bg-comments-section: #fff;
+$comentarios-bg-color: #007bff; 
+$txt-comments-color: white;
+
+// ultimos autos vendidos
+$autoBox-bg-color: white;
+$titulo-autoBox-color: #333;
+$txt-autoBox-color: #777;

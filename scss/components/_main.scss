@@ -126,10 +126,10 @@ body {
                     }
 
                     .desc {
-                        color: rgb(119, 255, 255);
+                        color: $des-car-txtcolor;
                         margin-top: 1%;
                         padding: 3px;
-                        background-color: rgb(65, 65, 65);
+                        background-color: $des-car-bgcolor;
                         border-radius: 5px;
                         border-width: 10px;
                         border: #060606;
@@ -171,10 +171,10 @@ body {
                     }
 
                     .desc {
-                        color: rgb(119, 255, 255);
+                        color: $des-car-txtcolor;
                         margin-top: 1%;
                         padding: 3px;
-                        background-color: rgb(65, 65, 65);
+                        background-color: $des-car-bgcolor;
                         border-radius: 5px;
                         border-width: 10px;
                         border: #060606;
@@ -211,10 +211,10 @@ body {
                     }
 
                     .desc {
-                        color: rgb(119, 255, 255);
+                        color: $des-car-txtcolor;
                         margin-top: 2rem;
                         padding: 3px;
-                        background-color: rgb(65, 65, 65);
+                        background-color: $des-car-bgcolor;
                         border-radius: 5px;
                         border-width: 10px;
                         border: #060606;
@@ -225,19 +225,19 @@ body {
 
                 .vento:hover {
                     transform: scale(1.1);
-                    transition: 0.6s;
+                    transition: 0.4s;
                     background-color: $car-box;
                 }
 
                 .golfgti:hover {
                     transform: scale(1.1);
-                    transition: 0.6s;
+                    transition: 0.4s;
                     background-color: $car-box;
                 }
 
                 .amarok:hover {
                     transform: scale(1.1);
-                    transition: 0.6s;
+                    transition: 0.4s;
                     background-color: $car-box;
                 }
             }
@@ -286,7 +286,7 @@ body {
 
         .sobreNos {
             padding: 50px 10%;
-            background-color: #f8f9fa;
+            background-color: $sec-color;
             margin-top: 5%;
 
             .sobreContent {
@@ -305,14 +305,14 @@ body {
 
                     h2 {
                         font-size: 28px;
-                        color: #333;
+                        color: $titulo-color;
                         margin-bottom: 10px;
                         font-family: Arial, Helvetica, sans-serif;
                     }
 
                     p {
                         font-size: 16px;
-                        color: #555;
+                        color: $txtSobreNos-color;
                         font-family: Verdana, Geneva, Tahoma, sans-serif;
                     }
                 }
@@ -328,15 +328,15 @@ body {
         .comentarios {
             text-align: center;
             padding: 50px 10%;
-            background-color: #fff;
+            background-color: $bg-comments-section;
             display: flex;
             justify-content: center;
 
             .comentariosTxt {
                 width: 35%;
                 flex-direction: row;
-                background: #007bff;
-                color: white;
+                background: $comentarios-bg-color;
+                color: $txt-comments-color;
                 padding: 20px;
                 border-radius: 10px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -367,7 +367,7 @@ body {
                 gap: 20px;
 
                 .autoBox {
-                    background: white;
+                    background: $autoBox-bg-color;
                     padding: 15px;
                     border-radius: 10px;
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.199);
